@@ -33,7 +33,7 @@
 #gnb .gnb_wrap{margin:0 auto;position:relative}
 #gnb #gnb_1dul {font-size:1.083em;padding:0 30px;zoom:1;display:flex;margin-bottom:0;}
 #gnb ul:after {display:block;visibility:hidden;clear:both;content:""}
-#gnb .gnb_1dli{line-height:100px;padding:0 30px;position:relative;flex: 1; min-width: 190px;}
+#gnb .gnb_1dli{line-height:100px;padding:0 30px;position:relative;flex: 1; min-width: 220px;}
 
 .gnb_1dli .bg{display:none;width:10px;height:10px;overflow:hidden;background:url(../img/gnb_bg2.gif) no-repeat 50% 50%;text-indent:-999px}
 .gnb_1da {display:inline-block;font-weight:700;color:#fff;text-decoration:none; font-size:1.25rem;}
