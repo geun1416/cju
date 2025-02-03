@@ -69,6 +69,8 @@ h1, h2, h3, h4, h5, h6{margin-bottom:0;}
 .table-st th {background-color: #f4f4f4;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;color: #333;font-weight: 500;vertical-align: middle;}
 .table-st th, .table-st td {padding:1rem;}
 .table-st th:first-child, .table_st td:first-child {border-left: none;}
+b{font-weight:600;}
+
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
 .tabnav li a{display:inline-block;min-width:200px;text-align:center;padding:12px 20px;border-right:1px solid #ddd;}
@@ -201,6 +203,20 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .traffic .link a{display:inline;text-decoration:underline;color:#3282cc}
 .traffic .link b{font-weight:500;margin-left:10px}
 
+/*이수조건*/
+.line-ti{margin:0px auto;max-width:500px;font-size:1.25rem;font-weight:600;text-align:center;border:5px solid rgba(0, 70, 156, 0.2);padding:0.5rem}
+.condition .line-ti{margin-bottom:2rem}
+.condition table{text-align:center;width:100%;line-height:1.2;}
+.condition table tr td span{line-height:1.5}
+.reference-text{margin-top:10px;font-weight:500;color:#00469C}
+
+/*교육과정 및 신청*/
+.curriculum{background:url('../img/curriculum.png') no-repeat 100% 100%;}
+.curriculum .box + .box{margin-top:2rem}
+.curriculum .box h6{font-size:1.25rem;font-weight:500;margin-bottom:1rem}
+.curriculum .box p{padding-left:1rem;margin:0.2rem 0;font-size:1.125rem}
+.curriculum .box p span{display:block;padding-left:1rem;font-size:1rem;margin:4px 0;}
+
 @media screen and (min-width:1400px){
 
 }
@@ -255,6 +271,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .partner-box ul li { width: 33.333%;}
     .sub_ti{margin:2rem 0;}
     .business .table-st .future ul li span{display:block;}
+    .curriculum{background-size:300px}
 }
 
 @media screen and (max-width:767px){
@@ -307,4 +324,5 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .traffic .list03{background-image:none}
     .traffic_content > span{display:block}
     .traffic ul li div span{line-height:1.8}
+    .curriculum{background-image:none;}
 }
