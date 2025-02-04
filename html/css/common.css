@@ -37,8 +37,8 @@
 
 .gnb_1dli .bg{display:none;width:10px;height:10px;overflow:hidden;background:url(../img/gnb_bg2.gif) no-repeat 50% 50%;text-indent:-999px}
 .gnb_1da {display:inline-block;font-weight:700;color:#fff;text-decoration:none; font-size:1.25rem;}
-.gnb_2dli{line-height:36px; padding:0 0 10px; font-size:1.125rem; font-weight:400;}
-.gnb_2dli:first-child{border:0}
+.gnb_2dli{line-height:1.5; padding:10px 0; font-size:1.125rem; font-weight:400;}
+.gnb_2dli:first-child{border:0;padding-top:0;}
 .gnb_2dul {display:block;padding: 0; height:0; overflow:hidden;}
 .gnb_2da {color:#222;text-align:left;text-decoration:none}
 
@@ -216,6 +216,8 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .curriculum .box h6{font-size:1.25rem;font-weight:500;margin-bottom:1rem}
 .curriculum .box p{padding-left:1rem;margin:0.2rem 0;font-size:1.125rem}
 .curriculum .box p span{display:block;padding-left:1rem;font-size:1rem;margin:4px 0;}
+
+.etc{font-size:1.125rem;line-height:1.8}
 
 @media screen and (min-width:1400px){
 
