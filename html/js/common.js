@@ -1,5 +1,7 @@
+function showAlert() {
+  alert("준비중입니다.");
+}
 
-  
 $(function() {
   AOS.init();
 });

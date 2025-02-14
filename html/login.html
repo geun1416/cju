@@ -52,16 +52,17 @@
 	<!--sub페이지 작업시 상단 클래스 .sub .wrap와 바로 밑 .container 필수-->
 	<div class="sub wrap">
 		<!--max-width는 container 100%는 container-fluid-->
-		<div class="container">
+		<div class="container login">
 			<div class="sub_contents">
-				<div class="sub_ti" data-aos="fade-in" data-aos-duration="1000"><h3>TITLE</h3></div>
+				<div class="sub_ti center_ti" data-aos="fade-in" data-aos-duration="1000"><h3>로그인</h3></div>
 			</div>
-			<div class="">
-				<div class="row gy-4 align-items-center" data-aos="fade-in" data-aos-duration="1500">
-					<div class="col-12 col-lg-12">
-					 
-					</div>
-				</div>
+			<div class="login-form">
+				<form>
+					<input class="form-control" type="text" placeholder="아이디" aria-label="아이디 입력">
+					<input class="form-control" type="password" placeholder="비밀번호" aria-label="비밀번호 입력">
+					<button type="button" class="btn btn-primary" onclick="showAlert()">로그인</button>
+					<button type="button" class="btn btn-secondary" onclick="showAlert()">회원가입</button>
+				</form>
 			</div>
 		</div>
 	</div>

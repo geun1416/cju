@@ -72,6 +72,7 @@
                 </ul>
 			</div>
 		</nav>
+
     </div>
 </div>
 <div class="mo_hd">
@@ -170,6 +171,16 @@ $(document).ready(function() {
             $('#hd').removeClass('on');
         }
     });
+
+    // 키보드 탭 이동 시 메뉴 열기
+    $('.gnb_1dli').on('focusin', function() {
+        $(this).children('.gnb_2dul').stop().animate({'height': '250px'}, 250);
+    });
+
+    // 키보드 탭 이동 후 focus가 다른 곳으로 이동 시 메뉴 닫기
+    $('.gnb_1dli').on('focusout', function() {
+        $(this).children('.gnb_2dul').stop().animate({'height': '-100px'}, 250);
+    });     
 });
 
 $(document).ready(function(){

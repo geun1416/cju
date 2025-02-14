@@ -260,3 +260,26 @@ input:read-only::-webkit-scrollbar-track {
 }
 
 
+:root {
+    --bs-primary: #00469C; 
+}
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #003b8e; 
+    border-color: #003b8e; 
+}
+.btn-outline-primary{
+    border-color: var(--bs-primary);
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+
+
+
+.btn{min-height:45px;}
+input{min-height:45px}
