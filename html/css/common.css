@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url("../font/pretendard.css");
 
 /* 본문 바로가기 */
 #skip_to_container a {z-index:100000;position:absolute;top:0;left:0;width:1px;height:1px;font-size:0;line-height:0;overflow:hidden}
@@ -31,9 +32,11 @@
 #gnb{position:relative;}
 #gnb h2{position:absolute;font-size:0;line-height:0;overflow:hidden}
 #gnb .gnb_wrap{margin:0 auto;position:relative}
-#gnb #gnb_1dul {font-size:1.083em;padding:0 30px;zoom:1;display:flex;margin-bottom:0;}
+#gnb #gnb_1dul {font-size:1.083em;zoom:1;display:flex;margin-bottom:0;}
 #gnb ul:after {display:block;visibility:hidden;clear:both;content:""}
-#gnb .gnb_1dli{line-height:100px;padding:0 30px;position:relative;flex: 1; min-width: 220px;}
+#gnb .gnb_1dli{position:relative;flex: 1;min-width:200px;line-height:110px;}
+#gnb .gnb_1dli.community{min-width:160px;}
+#gnb .gnb_1dli.support{padding-left:20px}
 
 .gnb_1dli .bg{display:none;width:10px;height:10px;overflow:hidden;background:url(../img/gnb_bg2.gif) no-repeat 50% 50%;text-indent:-999px}
 .gnb_1da {display:inline-block;font-weight:700;color:#fff;text-decoration:none; font-size:1.25rem;}

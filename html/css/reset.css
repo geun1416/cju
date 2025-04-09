@@ -283,3 +283,4 @@ input:read-only::-webkit-scrollbar-track {
 
 .btn{min-height:45px;}
 input{min-height:45px}
+input[type=radio], input[type=checkbox]{min-height:auto;}
