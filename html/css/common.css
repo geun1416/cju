@@ -266,7 +266,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .guide-text-box .line-box strong{text-align:center;font-weight:600;font-size:1.3rem;margin-bottom:2rem}
 .guide-text-box .line-box .span-wrap + .span-wrap{margin-top:1rem}
 .text-box.date{text-align: center;}
-.text-box.date .today{font-size:1.4rem;margin-bottom:0.2rem;font-weight:400;}
+.text-box.date .today{font-size:1.25rem;margin-bottom:0.2rem;font-weight:400;}
 .text-box.date h5{font-size:1.4rem}
 .terms-box .name{text-align:right;margin-bottom:1.5rem}
 .terms-box .name label{margin-right:1rem}
