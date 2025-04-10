@@ -278,7 +278,12 @@ input:read-only::-webkit-scrollbar-track {
     background-color: var(--bs-primary);
     border-color: var(--bs-primary);
 }
-
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active{
+    background-color: #003b8e
+}
+.btn-outline-primary{
+    color: #003b8e
+}
 
 
 .btn{min-height:45px;}
