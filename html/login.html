@@ -42,7 +42,6 @@
 
     });
 
-	
   </script>
   
 <body>
@@ -55,12 +54,34 @@
 			<div class="sub_contents">
 				<div class="sub_ti center_ti" data-aos="fade-in" data-aos-duration="1000"><h3>로그인</h3></div>
 			</div>
-			<div class="login-form">
-				<form>
-					<input class="form-control" type="text" placeholder="아이디" aria-label="아이디 입력">
-					<input class="form-control" type="password" placeholder="비밀번호" aria-label="비밀번호 입력">
-					<button type="button" class="btn btn-primary" onclick="showAlert()">로그인</button>
-					<button type="button" class="btn btn-secondary" onclick="location.href='join.html'">회원가입</button>
+			<div>
+				<form class="row needs-validation login-form" novalidate>
+					<div class="col-md-12 form-group">
+						<!-- <label for="validationCustom01" class="form-label">아이디</label> -->
+						 <!--required-input 필수값일때 class추가해주기기-->
+						<div class="required-input">
+							<input type="text" class="form-control required-input" id="validationCustom01" placeholder="아이디를 입력해주세요." required>
+							<!--필수값일때 추가하기-->
+							<span class="required-mark">*</span>
+							<div class="invalid-feedback">
+							올바른 아이디를 입력해주세요.
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 form-group">
+						<!-- <label for="validationCustom02" class="form-label">비밀번호</label> -->
+						<div class="required-input">
+							<input type="text" class="form-control required-input" id="validationCustom02" placeholder="비밀번호를 입력해주세요." required>
+							<span class="required-mark">*</span>
+							<div class="invalid-feedback">
+								올바른 비밀번호를 입력해주세요.
+							</div>	
+						</div>
+					</div>
+					<div class="col-12">
+						<button class="btn btn-primary" type="submit" onclick="showAlert()">로그인</button>
+						<button class="btn btn-secondary" onclick="location.href='join.html'">회원가입</button>
+					</div>
 				</form>
 			</div>
 		</div>

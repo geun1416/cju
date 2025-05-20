@@ -297,3 +297,12 @@ input[type=radio], input[type=checkbox]{min-height:auto;}
 .list-txt.dot > li {position: relative;padding-left:14px;font-size:1rem;word-break: keep-all;}
 .list-txt.dot > li + li{margin-top:4px}
 .list-txt.dot > li:before {content:'';display: inline-block;width:4px;height:4px;background:#00469C;border-radius:50%;position: absolute;top: 10px;left:4px;}
+/*input type number 스핀 제거*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}

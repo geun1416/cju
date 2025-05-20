@@ -75,7 +75,19 @@ h1, h2, h3, h4, h5, h6{margin-bottom:0;}
 .table-st.gray{border-top: 2px solid #999;}
 .table-st.gray th:first-child, .table_st.gray td:first-child{border-left:1px solid #ddd}
 b{font-weight:600;}
-
+/* 유효한 입력일 때 초록 테두리 제거 */
+.was-validated .form-control:valid, .form-control.is-valid:focus, .was-validated .form-control:valid:focus {border-color:#ced4da;padding-right: inherit;background-image: none;box-shadow: none;}
+.form-group{margin-top:1rem;}
+.required-input{position: relative;}
+.required-mark{color:#cd1125;position: absolute;right:6px;top:2px;z-index:11;font-size:1rem}
+.form-text-guide{display:inline-block;margin-top:0.4rem;font-size:0.875rem;font-weight:400;}
+.form-label{font-weight:600;font-size:1.125rem}
+.btn-wrap{display:flex;justify-content: center;}
+.btn-wrap .btn{min-width:220px;}
+.btn-wrap .btn + .btn{margin-left:1rem}
+.input-btn-right{display:flex;width:100%;justify-content: space-between;}
+.input-btn-right>div{width:100%}
+.input-btn-right .btn{margin-left:0.5rem;min-width:100px}
 
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
@@ -245,13 +257,11 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .sub_ti.center_ti h3::before, .sub_ti.center_ti h3::after{display:none}
 .login-form{max-width:500px;margin:0px auto}
 .login-form .btn{width:100%;margin-top:1rem}
-.login-form input + input{margin-top:1rem}
 
 /*회원가입*/
-.join h4{font-weight:bold;text-align:center;margin-bottom:3rem}
-.join h4 p{margin-bottom:0.4rem;font-size:1.125rem;font-weight:400;}
-.join .form-label{font-weight:600;font-size:1.125rem}
-.join .btn{padding:0;display: flex;align-items: center;justify-content: center;}
+.join h4{font-weight:bold;}
+.join-form{margin-top:1rem}
+.join .terms-box{margin-top:3rem;border-top:1px solid #ddd;padding-top:3rem}
 .terms-box h5{font-weight:600}
 .terms-box h6{font-weight:500;margin-bottom:0.8rem}
 .terms-box .table-box{margin-top:1.5rem}
