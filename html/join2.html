@@ -41,26 +41,15 @@
       $("#footer").load("include/footer.html");
 
 
-	  	// Example starter JavaScript for disabling form submissions if there are invalid fields
-		(function () {
-		'use strict'
+		$(function () {
+			const today = new Date();
+			const year = today.getFullYear();
+			const month = today.getMonth() + 1;
+			const date = today.getDate();
+			const formatted = `${year}년 ${month}월 ${date}일`;
 
-		// Fetch all the forms we want to apply custom Bootstrap validation styles to
-		var forms = document.querySelectorAll('.needs-validation')
-
-		// Loop over them and prevent submission
-		Array.prototype.slice.call(forms)
-			.forEach(function (form) {
-			form.addEventListener('submit', function (event) {
-				if (!form.checkValidity()) {
-				event.preventDefault()
-				event.stopPropagation()
-				}
-
-				form.classList.add('was-validated')
-			}, false)
-			})
-		})()
+			$('#todayDate').text(formatted);
+		});
     });
 
   </script>
@@ -80,14 +69,14 @@
 					<div class="col-12 col-lg-12">
 						<div class="join">
 							<div class="row">
-								<div class="col-12">
+								<div class="col-md-12 join-sign">
 								  <h4>
-									<p>2025년 항공우주 부트캠프 사업단</p>
-									성실참여 서약서
+									<span>2025년 항공우주 부트캠프 사업단</span> 성실참여 서약서
 									</h4>
 								  <form class="needs-validation" novalidate>
 									<div class="guide-text-box">
-										<p>본인은 청주대학교 항공우주 부트캠프 사업단에서 공고한 『2025년 항공우주 부트캠프 교육 프로그램』에 선발된 참여 학생으로서 
+										<p>본인은 청주대학교 항공우주 부트캠프 사업단에서 공고한<br/>
+											<b>2025년 항공우주 부트캠프 교육 프로그램</b>에 선발된 참여 학생으로서 
 										<br/>아래의 사항을 꼼꼼하게 확인하였으며, 성실하게 임할 것을 다음과 서약합니다.</p>
 										<p class="line-box">
 											<strong>「첨단산업 인재양성 항공우주 부트캠프」 프로그램 안내</strong>
@@ -105,12 +94,11 @@
 												<span>- 인천항공우주산학융합원/현장실습</span>
 											</span>
 										</p> 
-
 										<div class="terms-check">
 											<div class="d-inline-block">
 												<div class="form-check">
-													<input type="checkbox" class="form-check-input" id="same-address">
-													<label class="form-check-label" for="same-address">
+													<input type="checkbox" class="form-check-input" id="test">
+													<label class="form-check-label" for="test">
 														위 사항은 「첨단산업 인재양성 항공우주 부트캠프」 수여를 위해 필수적인 조건으로 한 가지라도 이행하지 못하였을 경우
 														<br/>수여가 되지 않는 것에 대해 본인이 감수할 것임을 서약하며, 본 서약서를 제출합니다.
 													</label>
@@ -118,23 +106,28 @@
 											</div>
 										</div>
 									</div>
-									<!--개인정보 수집-->
 									<div class="terms-box">
-										<div class="text-box date">
-											<p class="today">2025년 3월 25일</p>
-											<h5>청주대학교 항공우주 부트캠프 사업단 귀하</h5>				
-										</div>
-										<div class="row name">
-											<div class="col-md-12">
-												<label class="form-label d-inline">신청자</label>
-												<input type="text" class="form-control d-inline w-auto" required>
-												<div class="invalid-feedback">
+										<div class="today">
+											<h5>
+												<span class="date" id="todayDate">2025년 3월 25일</span>
+												청주대학교 항공우주 부트캠프 사업단 귀하
+											</h5>		
+											<div class="col-md-12 form-group name">
+												<!-- <label for="" class="form-label">이름</label> -->
+												<div class="required-input">
+													<input type="text" class="form-control required-input" id="" placeholder="신청자 성함을 입력해주세요" value="" required>
+													<span class="required-mark">*</span>
+													<div class="invalid-feedback">
 													Valid last name is required.
-												 </div>
-											</div>
+													</div>
+												</div>
+											</div>		
 										</div>
 									</div>
-									<button class="w-100 btn btn-primary btn-lg" type="submit" onclick="showAlert()">가입하기</button>
+									<div class="btn-wrap">
+										<button class="btn btn-secondary" onclick="location.href='join.html'">이전단계</button>
+										<button class="btn btn-primary" type="submit" onclick="showAlert()">가입하기</button>
+									</div>
 								  </form>
 								</div>
 							</div>

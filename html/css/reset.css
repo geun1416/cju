@@ -285,7 +285,9 @@ input:read-only::-webkit-scrollbar-track {
 .btn-outline-primary{
     color: #003b8e
 }
-
+.text-primary {
+    color: #003b8e !important;
+}
 
 .btn{min-height:45px;}
 input{min-height:45px}

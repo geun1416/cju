@@ -147,8 +147,20 @@
     </div>
 </div>
 <script>
+  document.addEventListener('shown.bs.modal', function (event) {
+    const header = document.getElementById('hd');
+    const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+    if (scrollBarWidth > 0) {
+      header.style.paddingRight = `${scrollBarWidth}px`;
+    }
+  });
 
+  document.addEventListener('hidden.bs.modal', function (event) {
+    const header = document.getElementById('hd');
+    header.style.paddingRight = '';
+  });
 $(document).ready(function() {
+
     let hdIn = false;
 
     $("#hd").css("z-index", 1000);

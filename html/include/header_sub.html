@@ -150,7 +150,33 @@
 </div>
 <script>
 
+  document.addEventListener('DOMContentLoaded', function () {
+    const modalEl = document.getElementById('exampleModal');
+    const header = document.getElementById('hd');
+
+    if (!modalEl) {
+      console.warn('❌ 모달 요소를 찾지 못했습니다.');
+      return;
+    }
+
+    modalEl.addEventListener('shown.bs.modal', function () {
+      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+      if (header) {
+        header.style.setProperty('padding-right', `${scrollBarWidth}px`, 'important');
+        console.log('✅ 패딩 적용됨:', scrollBarWidth);
+      }
+    });
+
+    modalEl.addEventListener('hidden.bs.modal', function () {
+      if (header) {
+        header.style.removeProperty('padding-right');
+        console.log('✅ 패딩 제거됨');
+      }
+    });
+  });
+
 $(document).ready(function() {
+
     let hdIn = false;
 
     $("#hd").css("z-index", 1000);
