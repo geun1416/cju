@@ -1,11 +1,14 @@
+//alert modal 임시
 function showAlert() {
   alert("준비중입니다.");
 }
 
+//aos 애니메이션
 $(function() {
   AOS.init();
 });
 
+//tab
 $(function(){
   $('.tabcontent > div').hide();
   $('.tabnav a').click(function () {
@@ -16,6 +19,7 @@ $(function(){
   }).filter(':eq(0)').click();
 });
 
+//최상단 스크롤
 $(function() { 
  $('.topBtn').css('display','none');
  $(window).scroll(function() { if ($(this).scrollTop() > 300) { 
@@ -28,7 +32,8 @@ $(function() {
    $('html, body').animate({scrollTop:0},500);
  });
 });
-  
+
+//메인 슬라이드
 $(function(){
   var swiper = new Swiper(".mySwiper", {
      //기본 셋팅 
@@ -60,6 +65,7 @@ $(function(){
 });
 
 
+//bootstrap validation
 $(function () {
   'use strict';
 
@@ -78,3 +84,13 @@ $(function () {
     });
 });
 
+
+  $(function () {
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = today.getMonth() + 1;
+    const date = today.getDate();
+    const formatted = `${year}년 ${month}월 ${date}일`;
+
+    $('#todayDate').text(formatted);
+  });

@@ -38,12 +38,13 @@
 #gnb .gnb_1dli.community{min-width:160px;}
 #gnb .gnb_1dli.support{padding-left:20px}
 
-.gnb_1dli .bg{display:none;width:10px;height:10px;overflow:hidden;background:url(../img/gnb_bg2.gif) no-repeat 50% 50%;text-indent:-999px}
+.gnb_1dli .bg{display:none;width:10px;height:10px;overflow:hidden;text-indent:-999px}
 .gnb_1da {display:inline-block;font-weight:700;color:#fff;text-decoration:none; font-size:1.25rem;}
 .gnb_2dli{line-height:1.5; padding:10px 0; font-size:1.125rem; font-weight:400;}
 .gnb_2dli:first-child{border:0;padding-top:0;}
 .gnb_2dul {display:block;padding: 0; height:0; overflow:hidden;}
 .gnb_2da {color:#222;text-align:left;text-decoration:none}
+.gnb_2da:hover{text-decoration: underline;}
 
 #gnb .gnb_menu_btn{background:#4158d1;color:#fff;width:50px;height:50px;border:0;vertical-align:top;font-size:1.125rem}
 #gnb .gnb_close_btn{background:#4158d1;color:#fff;width:50px;height:50px;border:0;vertical-align:top;font-size:1.125rem;position:absolute;top:-50px;left:0}
@@ -82,16 +83,15 @@ b{font-weight:600;}
 .required-mark{color:#cd1125;position: absolute;right:6px;top:2px;z-index:11;font-size:1rem}
 .form-text-guide{display:inline-block;margin-top:0.4rem;font-size:0.875rem;font-weight:400;}
 .form-label{font-weight:600;font-size:1.125rem}
-.btn-wrap{display:flex;justify-content: center;margin-top:2rem}
+.btn-wrap{display:flex;justify-content: center;margin-top:1rem}
 .btn-wrap .btn{min-width:220px;}
 .btn-wrap .btn + .btn{margin-left:1rem}
 .input-btn-right{display:flex;width:100%;justify-content: space-between;}
 .input-btn-right>div{width:100%}
 .input-btn-right .btn{margin-left:0.5rem;min-width:100px;height:45px}
-.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
-    color: #dc3545;
-}
-
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {color: #dc3545;}
+.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {background-color: #dc3545;}
+.form-check-input.is-valid, .was-validated .form-check-input:valid {border-color: #dc3545;}
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
 .tabnav li a{display:inline-block;min-width:200px;text-align:center;padding:12px 20px;border-right:1px solid #ddd;}
@@ -102,16 +102,13 @@ b{font-weight:600;}
 /*modal*/
 .modal-backdrop.show{opacity: .3;}
 .modal-style-alert .modal-dialog{justify-content:center;}
-.modal-style-alert .modal-content{width:auto;min-width:300px}
+/* .modal-style-alert .modal-content{width:auto;min-width:300px} */
 .modal-style-alert .modal-header{border-bottom:0;position: relative;}
-.modal-style-alert .modal-body{text-align:center;padding:1rem 1rem 1rem 1rem;font-weight:400;}
+.modal-style-alert .modal-body{text-align:center;padding:0rem 1rem 1rem 1rem;font-weight:400;}
 .modal-style-alert .modal-footer{padding:0 0.5rem 0.5rem 0.5rem;border-top:0;}
 .modal-style-alert .modal-footer .btn-wrap{width:100%;}
 .modal-style-alert .modal-footer .btn-wrap .btn{width:100%;min-width:auto;font-size:0.875rem}
 .modal-style-alert .modal-footer .btn-wrap .btn + .btn{margin-left:0.5rem;}
-
-
-
 
 /*main*/
 .main_bn{position: relative;}
@@ -277,7 +274,6 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 
 /*회원가입*/
 .join h4{font-weight:bold;}
-.join-form{margin-top:1rem}
 .join .terms-box{margin-top:3rem;border-top:1px solid #ddd;padding-top:3rem}
 .terms-box h5{font-weight:600}
 .terms-box h6{font-weight:500;margin-bottom:0.8rem}
@@ -297,6 +293,60 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .join-sign .today{margin:0px auto;max-width:455px;margin-bottom:2rem}
 .join-sign .today h5{text-align:center;}
 .join-sign .today #todayDate{display:block;margin-bottom:4px}
+
+/*마이페이지*/
+@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+#confirmationModal .modal-dialog{max-width:790px}
+#confirmationModal .btn-close{position: absolute;z-index: 1;right:20px;font-size:20px}
+.confirmation *{font-family:'nanummyeongjo';}
+.confirmation{background:url('../img/confirmation_bg.png') no-repeat center center;background-size:cover;
+    min-height:1000px;}
+.confirmation .cont{padding-top:8rem;background: url('../img/confirmation_logo.png') no-repeat 50% 50%;background-size:300px;}
+.confirmation .cont h4{font-weight:bold;font-size:2.5rem;letter-spacing:1rem;}
+.confirmation .cont h4 span{display:block;font-size:1.125rem;margin-top:1rem;color:#777777}
+.confirmation .cont .info{display:flex;flex-wrap: wrap;justify-content:center;margin-top:3rem}
+.confirmation .cont .info table{text-align:left;font-size:1.125rem}
+.confirmation .cont .info table th{width:auto;letter-spacing:5pt;font-weight:500;}
+.confirmation .cont .info table th::after{content: ':';margin:0 1rem;font-weight:500;}
+.confirmation .cont .info .text{margin-top:2rem;line-height: 1.8;font-size:1.25rem}
+.confirmation .cont .info .text .etc{display:block;font-size:1rem;color:#777777;margin-top:0.5rem}
+.confirmation .cont .info .text .date{display:block;font-size:1.5rem;font-weight:bold;margin-top:2rem}
+.confirmation .cont .info .text .sign{background:url('../img/confirmation_sign.png') no-repeat;
+    background-size: 100px 100px;background-position: 100% 0;height: 100px;display:block;}
+.confirmation .cont .info .text .sign .name{display:block;padding-top:1.8rem;font-size:1.7rem;font-weight:500}
+/*print*/
+@page {
+    size: A4;
+    margin:0;
+}
+@media print {
+    /* 인쇄 시, background속성(background-image, background-color)를 강제로 보이게 지정 */
+    *{ 
+        color-adjust: exact;  
+        -ms-print-color-adjust: exact; 
+        -moz-print-color-adjust: exact; 
+        -webkit-print-color-adjust: exact; 
+        print-color-adjust: exact; 
+    }
+
+    body * {
+        visibility: hidden !important;
+    }
+
+    /* 인쇄 대상 지정 */
+    #printModalContent,
+    #printModalContent * {
+        visibility: visible !important;
+    }
+
+
+    /* 모달 내부 버튼 및 기타 숨기기 */
+    .modal-footer,
+    .btn-close {
+        display: none !important;
+    }
+}
+
 
 @media screen and (min-width:1400px){
 
@@ -411,5 +461,6 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .curriculum{background-image:none;}
     .main-link a{min-height:120px}
     .main-link a span{bottom:20px}
+    .btn-wrap .btn{width:100%;min-width:auto;}
 }
 

@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="ko" xml:lang="ko">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="">
+ <meta name="keywords" content="">
+ <meta property="og:description" content="">
+ <meta property="og:title" content="">
+ <meta property="og:image" content="">
+ <meta property="og:type" content="website">
+
+ <!-- Bootstrap CSS -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+ 
+ <!-- css -->
+ <link rel="stylesheet" href="css/reset.css">
+ <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="css/aos.css">
+ <link rel="stylesheet" href="css/all.min.css">
+ <!-- js -->
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/swiper-bundle.min.js"></script>
+ <script src="js/aos.js"></script>
+ <script src="js/all.min.js"></script>
+ <script src="js/common.js"></script>
+
+ <title>ASF l 충북 항공·우주 인재 양성 허브</title>
+
+ <script type="text/javascript">
+    $(document).ready(function() {
+      $("#header").load("include/header_sub.html");
+      $("#footer").load("include/footer.html");
+    });
+ </script>
+
+</head>
+
+<body>
+	<div id="skip_to_container"><a href="#container">본문 바로가기</a></div>
+	<header id="header"></header>
+	<!--sub페이지 작업시 상단 클래스 .sub .wrap와 바로 밑 .container 필수-->
+	<div class="sub wrap">
+		<!--max-width는 container 100%는 container-fluid-->
+		<div class="container">
+			<div class="sub_contents">
+				<div class="sub_ti" data-aos="fade-in" data-aos-duration="1000"><h3>교육현황</h3></div>
+			</div>
+			<div class="">
+				<div class="row gy-4 align-items-center" data-aos="fade-in" data-aos-duration="1500">
+					<div class="col-12 col-lg-12">
+						<div class="table-box">
+							<table class="table-st gray text-center">
+								<thead>
+									<tr>
+										<th>과정명</th>
+										<th>교육기간</th>
+										<th>수강상태</th>
+										<th>증명서</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>교육신청명</td>
+										<td>2025.05.05 ~ 2025.05.20</td>
+										<td>
+											<!-- 이수중 -->
+											 이수완료
+										</td>
+										<td>
+											<!-- <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#confirmationModal">참여확인서</button> -->
+											<button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#confirmationModal">이수증</button>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 미리보기 모달 -->
+
+	<div class="modal fade modal-style-alert" id="confirmationModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content p-4">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+				<div class="modal-body" id="printModalContent">
+					<!--참여확인서
+					<div class="confirmation">
+						<div class="cont">
+							<div class="ti">
+								<h4>참여확인서<span>Certificate of Participation</span></h4>
+							</div>
+							<div class="info">
+								<table>
+									<tr>
+										<th>이수구분</th>
+										<td><span style="letter-spacing:6px;">초급교과명</span></td>
+									</tr>
+									<tr>
+										<th>교육과정</th>
+										<td><span>첨단항공모빌리티(UAM조종시스템)</span></td>
+									</tr>
+									<tr>
+										<th>성&nbsp;&nbsp;&nbsp;&nbsp;명</th>
+										<td><span style="letter-spacing:6px;">홍길동</span></td>
+									</tr>
+									<tr>
+										<th>교육기간</th>
+										<td><span>2025년 4월 1일 ~ 활동 중</span></td>
+									</tr>																		
+								</table>
+								<div class="text">
+									위 학생은 교육부와 한국산업기술진흥원이 주관하는<br/>
+									「2025 청주대학교 항공·우주 부트캠프 사업단」교육 과정을<br/>
+									참여하고 있음을 증명합니다.
+									<span class="etc">※ 본 증서는 공적인 증서로의 효력이 발생하지 않음</span>
+									<span id="todayDate" class="date"></span>
+									<span class="sign">
+										<span class="name">청주대학교 항공·우주 부트캠프 사업단</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<div class="confirmation">
+						<div class="cont">
+							<div class="ti">
+								<h4>이수증<span>Certificate of Completion</span></h4>
+							</div>
+							<div class="info">
+								<table>
+									<tr>
+										<th>이수구분</th>
+										<td><span style="letter-spacing:6px;">초급교과명</span></td>
+									</tr>
+									<tr>
+										<th>교육과정</th>
+										<td><span>첨단항공모빌리티(UAM조종시스템)</span></td>
+									</tr>
+									<tr>
+										<th>소&nbsp;&nbsp;&nbsp;&nbsp;속</th>
+										<td><span style="letter-spacing:6px;">?</span></td>
+									</tr>
+									<tr>
+										<th>학&nbsp;&nbsp;&nbsp;&nbsp;번</th>
+										<td><span>12121212</span></td>
+									</tr>
+									<tr>
+										<th>성&nbsp;&nbsp;&nbsp;&nbsp;명</th>
+										<td><span style="letter-spacing:6px;">홍길동</span></td>
+									</tr>															
+								</table>
+								<div class="text">
+									위 학생은 교육부와 한국산업기술진흥원이 주관하는<br/>
+									 「2025년 청주대학교 항공·우주 부트캠프 사업단」교육 과정을<br/>
+									 성실히 이수하였으므로 이 증서를 수여합니다.
+									<span class="etc">※ 본 증서는 공적인 증서로의 효력이 발생하지 않음</span>
+									<span id="todayDate" class="date"></span>
+									<span class="sign">
+										<span class="name">청주대학교 항공·우주 부트캠프 사업단</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="btn-wrap">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+						<button type="button" class="btn btn-primary" onclick="window.print()">인쇄하기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer id="footer"></footer>
+
+
+</body>
+</html>

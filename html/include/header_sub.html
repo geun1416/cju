@@ -74,6 +74,12 @@
                     </li>
                     <li class="gnb_1dli" style="z-index:994">
                         <a href="login.html" target="_self" class="gnb_1da">로그인/회원가입</a>
+                        <!-- <a href="sub06-1.html" target="_self" class="gnb_1da">마이페이지</a> -->
+                        <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="sub06-1.html" target="_self" class="gnb_2da">교육현황</a></li>
+                            <li class="gnb_2dli"><a href="sub06-2.html" target="_self" class="gnb_2da">개인정보 수정</a></li>
+                            <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">로그아웃</a></li>
+                        </ul>
                     </li>
                 </ul>
 			</div>
@@ -142,6 +148,12 @@
                     </li>
                     <li>
                         <a href="login.html" target="_self" class="gnb_1da">로그인/회원가입</a>
+                        <!-- <a href="#" target="_self" class="gnb_1da">마이페이지</a> -->
+                         <ul class="gnb_2dul">
+                            <li class="gnb_2dli"><a href="sub06-1.html" target="_self" class="gnb_2da">교육현황</a></li>
+                            <li class="gnb_2dli"><a href="sub06-2.html" target="_self" class="gnb_2da">개인정보 수정</a></li>
+                            <li class="gnb_2dli"><a href="#" target="_self" class="gnb_2da">로그아웃</a></li>
+                        </ul>
                     </li>
                 </ul>
             <div class="mg_bk"></div>
@@ -150,30 +162,6 @@
 </div>
 <script>
 
-  document.addEventListener('DOMContentLoaded', function () {
-    const modalEl = document.getElementById('exampleModal');
-    const header = document.getElementById('hd');
-
-    if (!modalEl) {
-      console.warn('❌ 모달 요소를 찾지 못했습니다.');
-      return;
-    }
-
-    modalEl.addEventListener('shown.bs.modal', function () {
-      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
-      if (header) {
-        header.style.setProperty('padding-right', `${scrollBarWidth}px`, 'important');
-        console.log('✅ 패딩 적용됨:', scrollBarWidth);
-      }
-    });
-
-    modalEl.addEventListener('hidden.bs.modal', function () {
-      if (header) {
-        header.style.removeProperty('padding-right');
-        console.log('✅ 패딩 제거됨');
-      }
-    });
-  });
 
 $(document).ready(function() {
 
