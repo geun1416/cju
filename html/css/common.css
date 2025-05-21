@@ -88,6 +88,9 @@ b{font-weight:600;}
 .input-btn-right{display:flex;width:100%;justify-content: space-between;}
 .input-btn-right>div{width:100%}
 .input-btn-right .btn{margin-left:0.5rem;min-width:100px;height:45px}
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+    color: #dc3545;
+}
 
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
