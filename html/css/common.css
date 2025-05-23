@@ -133,6 +133,7 @@ b{font-weight:600;}
 .post_box{border:1px solid #ddd;width:100%;}
 .post_box .post{padding:14px}
 .post_box .ti{display:block;max-width:280px;font-size:1rem;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.post_box .ti:hover{text-decoration:underline;}
 .post_box .date{display:block;font-size:0.875rem;color:#888888;}
 .post_box .txt {margin-top:20px;font-size:0.875rem;line-height:1.3em;max-height: calc(1.3em * 2);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:2;}
 
@@ -145,6 +146,7 @@ b{font-weight:600;}
 .notic-list li a{display:flex;justify-content: space-between;}
 .notic-list li a span{display:inline-block;font-size:0.875rem}
 .notic-list li a .ti{max-width:280px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.notic-list li a .ti:hover{text-decoration: underline;}
 .gallery .post_box{border:0;}
 .gallery .post_box .post{padding:0}
 .gallery .row + .row{margin-top:0.5rem}
@@ -231,11 +233,16 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .partner:hover a::before, .partner:hover a::after{transition-delay: 0.2s;}
 
 /*오시는 길*/
-.map-ti {background: #f9f9f9;padding: 10px 10px 10px 10px;border: 1px solid #dfdfdf;}
+.map-ti {background: #f9f9f9;padding: 10px 10px 10px 10px;border: 1px solid #dfdfdf;position: absolute;bottom:170px;z-index: 10;width:100%;}
 .map-ti svg{color:#00469C;margin-right:4px}
-.map-ti span{font-weight:500;}
+.map-ti span{font-weight:500;font-size:1rem;}
 .map-ti span + span{margin-left:1rem}
-.map .root_daum_roughmap{width:100%}
+.map .root_daum_roughmap{width:100%;position: relative;}
+.map .root_daum_roughmap .cont .section.section_address{display:none} 
+.map .root_daum_roughmap .cont .section{margin:0;padding:20px;border:1px solid #ddd;}
+.map .root_daum_roughmap .cont .section.lst{border-top:0;border-bottom:1px solid #ddd;}
+.map .root_daum_roughmap .cont .section *{font-size:1rem}
+.map .root_daum_roughmap .cont .section .title{font-weight:500;margin-bottom:10px}
 .map .wrap_controllers{display:none}
 
 .traffic{padding-top:40px;}

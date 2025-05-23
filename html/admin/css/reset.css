@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+html {
+    font-size: 16px; /* 1rem = 16px */
+}
+
+/* 태블릿 화면 크기 */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px; /* 1rem = 14px */
+    }
+}
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  	font-style: normal;
+  	font-weight:300;
+	vertical-align: baseline;
+  	letter-spacing:-0.3pt;
+	box-sizing: border-box;
+	word-break: keep-all;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.5;
+}
+ol, ul {
+	list-style: none;
+    padding:0;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+p{margin-bottom:0;}
+
+html a{display:inline-block;text-decoration: none;cursor:pointer;}
+/* div, p, span{cursor:inherit;user-select: none;} */
+
+/* 스크롤바 설정*/
+header *::-webkit-scrollbar{width: 6px;height:6px;}
+/* 스크롤바 막대 설정*/
+header *::-webkit-scrollbar-thumb{height:auto;background-color:#b4b7bd;/* 스크롤바 둥글게 설정*/border-radius: 10px;    }
+/* 스크롤바 뒷 배경 설정*/
+header *::-webkit-scrollbar-track{background-color: rgba(0,0,0,0);}
+/* textarea:disabled 스크롤바 뒷 배경 설정*/
+textarea:disabled::-webkit-scrollbar-track, 
+input:disabled::-webkit-scrollbar-track, 
+textarea:read-only::-webkit-scrollbar-track, 
+input:read-only::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+
+:root {
+    --bs-primary: #00469C; 
+}
+.btn-primary {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-primary:hover, .btn-primary:focus {
+    background-color: #003b8e; 
+    border-color: #003b8e; 
+}
+.btn-outline-primary{
+    border-color: var(--bs-primary);
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    background-color: var(--bs-primary);
+    border-color: var(--bs-primary);
+}
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active{
+    background-color: #003b8e;
+    border-color: #003b8e
+}
+.btn-outline-primary{
+    color: #003b8e
+}
+.text-primary {
+    color: #003b8e !important;
+}
