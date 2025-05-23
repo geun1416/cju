@@ -22,7 +22,7 @@ background-size: cover;}
 .table-admin-style .btn{width:100%;}
 .sorting-style table.dataTable>thead>tr>th:not(.sorting_disabled), 
 .sorting-style table.dataTable>thead>tr>td:not(.sorting_disabled) {
-    padding-right: 0;
+    padding-right: 0.75rem;
 }
 .sorting-style table.dataTable>thead .sorting:before, 
 .sorting-style table.dataTable>thead .sorting:after,
@@ -51,5 +51,12 @@ background-size: cover;}
         right:auto;
         left:0;
         z-index: 9999;
+    }
+}
+
+@media (max-width: 10240px) {
+   .table-admin-style tbody tr td:first-child{min-width:80px}
+    .table-admin-style tbody tr td{
+      min-width:120px
     }
 }
