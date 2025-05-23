@@ -75,6 +75,14 @@ h1, h2, h3, h4, h5, h6{margin-bottom:0;}
 .table-st th:first-child, .table_st td:first-child {border-left: none;}
 .table-st.gray{border-top: 2px solid #999;}
 .table-st.gray th:first-child, .table_st.gray td:first-child{border-left:1px solid #ddd}
+.table-st02 {display: table;table-layout: fixed;width: 100%;border-top: 2px solid #001f45;border-collapse: separate;border-collapse: collapse;}
+.table-st02 td {border-left: 1px solid #ddd;border-bottom: 1px solid #ddd;vertical-align: middle;word-wrap: break-word;word-break: keep-all;color: #202020;background: #fff;}
+.table-st02 th:first-child, .table-st02 td:first-child{border-left:0;}
+.table-st02 th {background-color: #f4f4f4;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;color: #333;font-weight: 500;vertical-align: middle;}
+.table-st02 th, .table-st02 td {padding:1rem;}
+.table-scroll{overflow:auto;}
+.table-scroll table{min-width:1200px}
+
 b{font-weight:600;}
 /* 유효한 입력일 때 초록 테두리 제거 */
 .was-validated .form-control:valid, .form-control.is-valid:focus, .was-validated .form-control:valid:focus {border-color:#ced4da;padding-right: inherit;background-image: none;box-shadow: none;}
@@ -94,8 +102,9 @@ b{font-weight:600;}
 .form-check-input.is-valid, .was-validated .form-check-input:valid {border-color: #dc3545;}
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
-.tabnav li a{display:inline-block;min-width:200px;text-align:center;padding:12px 20px;border-right:1px solid #ddd;}
-.tabnav li a.active{background:#ddd;border-color:#ddd;font-weight:700}
+.tabnav li a{display:inline-block;text-align:center;padding:12px 20px;border-right:1px solid #ddd;}
+.tabnav li a:hover{color:#00479d}
+.tabnav li a.active{background:#00479d;border-color:#00479d;color:#fff;font-weight:500}
 .tabnav li:first-child a{border-top-left-radius:8px;}
 .tabcontent{border:1px solid #fff;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
 
@@ -196,13 +205,30 @@ footer{position:relative;bottom:0;width:100%}
 .business .table-st dl dd::before{content:'';display:block;width:5px;height:1px;background:#555;position:absolute;left:18px;top:13px}
 .business .table-st dl dd, .business .table-st dl dt{margin-top:0.5rem;line-height:1.7}
 .business .table-st dl dd span{display:block;color:#777;line-height:1.5;font-size:0.875rem}
-.business .table-st .future ul li span{display:inline-block;background:#00469C;color:#fff;border-radius:2rem;padding:2px 12px;
+.business .table-st .future ul li span{display:inline-block;background:#00479d;color:#fff;border-radius:2rem;padding:2px 12px;
 font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: center;}
 .business .table-st .future ul li + li{margin-top:0.5rem}
 
 /*조직도*/
 .org-chart{text-align:center;}
 .org-chart p{margin:4rem 0 2rem 0;line-height:1.5}
+
+/*심볼*/
+.emblem-img{display:flex; align-items: center;justify-content: center;}
+.emblem-img img{max-width:200px}
+.emblem-img .line{display:block;width:1px;height:160px;background:#ddd;margin:0 5rem}
+.emblem-color{background:#00479d;padding:3rem 5rem;}
+.emblem-color *{color:#fff;}
+.emblem-color span{display:block;text-align:left;}
+.emblem-color span + span{margin-top:0.5rem}
+.emblem-info{margin-top:4rem;font-size:1.125rem}
+.emblem-info strong{display:block;font-size:1.25rem;font-weight:600;margin-bottom:4px}
+.emblem-download{margin-top:4rem}
+.emblem-download ul {display:flex;}
+.emblem-download ul li{border:1px solid #ddd;flex:1;margin:1rem}
+.emblem-download ul li span{display:block;padding:1rem;text-align:center;}
+.emblem-download ul li span img{width:100%;}
+.emblem-download ul.big li span img{max-width:400px;}
 
 /*협력기관 및 산업체*/
 
@@ -232,6 +258,24 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .partner:hover::before, .partner:hover::after{ transition-delay: 0s;}
 .partner:hover a::before, .partner:hover a::after{transition-delay: 0.2s;}
 
+/*정사각형*/
+.square .partner {
+  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
+  height: auto;
+}
+.square .partner {
+  width: 25%;
+  position: relative;
+  padding-top: 25%; /* ✅ 정사각형 만들기: 세로를 가로의 100%로 */
+}
+.square .partner a {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*오시는 길*/
 .map-ti {background: #f9f9f9;padding: 10px 10px 10px 10px;border: 1px solid #dfdfdf;position: absolute;bottom:170px;z-index: 10;width:100%;}
 .map-ti svg{color:#00469C;margin-right:4px}
@@ -258,19 +302,23 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .traffic .link b{font-weight:500;margin-left:10px}
 
 /*이수조건*/
-.line-ti{margin:0px auto;max-width:500px;font-size:1.25rem;font-weight:600;text-align:center;border:5px solid rgba(0, 70, 156, 0.2);padding:0.5rem}
+.line-ti{text-align: center;}
+.line-ti span{display:inline-block;padding:0.5rem 2rem;font-size:1.25rem;font-weight:600;border:5px solid rgba(0, 70, 156, 0.2);}
 .condition .line-ti{margin-bottom:2rem}
 .condition table{text-align:center;width:100%;line-height:1.2;}
 .condition table tr td span{line-height:1.5}
 .reference-text{margin-top:10px;font-weight:500;color:#00469C}
 
-/*교육과정 및 신청*/
 .curriculum{background:url('../img/curriculum.png') no-repeat 100% 100%;}
+.curriculum .tabnav{border:1px solid #ddd;}
+.curriculum .tabnav li{flex:1;border-radius:0;}
+.tabnav li:first-child a{border-radius:0;}
+.curriculum .tabnav li a{width:100%;}
 .curriculum .box + .box{margin-top:2rem}
-.curriculum .box h6{font-size:1.25rem;font-weight:500;margin-bottom:1rem}
-.curriculum .box p{padding-left:1rem;margin:0.2rem 0;font-size:1.125rem}
-.curriculum .box p span{display:block;padding-left:1rem;font-size:1rem;margin:4px 0;}
-
+.curriculum .box h6{font-size:1.5rem;font-weight:600;margin:4rem 0 2rem;}
+.curriculum .box p{margin:0.2rem 0;font-size:1.125rem}
+.curriculum .box p span{display:block;font-size:1rem;margin:4px 0;}
+.curriculum .box p span b{color:#002550}
 .etc{font-size:1.125rem;line-height:1.8}
 
 /*로그인*/
@@ -430,6 +478,14 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .greetings .big{font-size:1.5rem}
     .main-link a{min-height:180px}
     .main-link a span{font-size:1rem;}
+    .emblem-img .line{display:none;}
+    .emblem-img{flex-direction: column;}
+    .emblem-img img{max-width:150px}
+    .emblem-color{margin-top:1.5rem}
+    .emblem-info, .emblem-download{margin-top:2rem}
+    .emblem-download ul{flex-direction: column;}
+    .emblem-download ul li{margin:1rem 0 0 0}
+    .emblem-download ul.big li span img{max-width:350px}
 }
 
 
@@ -455,6 +511,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .main-bn .swiper-button-next:after, .main-bn .swiper-button-prev:after{font-size:20px;}
     .sub-ti h3{font-size:1.5rem}
     .partner-box ul li{width:50%}
+    .square .partner{width:50%;}
     .map-ti span{display:block;}
     .map-ti span + span{margin-left:0;}
     .traffic{padding-top:20px}
@@ -469,5 +526,9 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .main-link a{min-height:120px}
     .main-link a span{bottom:20px}
     .btn-wrap .btn{width:100%;min-width:auto;}
+    .emblem-download ul.big li span img{max-width:200px}
+    .curriculum .tabnav{flex-wrap: wrap;}
+    .curriculum .tabnav li{flex:0 0 50%}
+    .curriculum .tabnav li:nth-child(n+3){border-top:1px solid #ddd}
 }
 

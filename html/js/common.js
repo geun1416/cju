@@ -94,3 +94,20 @@ $(function () {
 
     $('#todayDate').text(formatted);
   });
+
+  $(function () {
+    $('#customFile').on('change', function () {
+      const file = this.files[0];
+      if (!file) return; 
+
+      $('.file-name').text(file.name);
+      $('.clear-file').show();
+    });
+
+    $('.clear-file').on('click', function () {
+      const $input = $('#customFile');
+      $input.val('');
+      $('.file-name').text('선택된 파일 없음');
+      $(this).hide();
+    });
+  });
