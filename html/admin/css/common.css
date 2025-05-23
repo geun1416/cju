@@ -17,8 +17,8 @@ background-size: cover;}
 .table-admin-style{border-bottom:1px solid #e3e6f0;}
 .table-admin-style tbody tr td{border-right:1px solid #e3e6f0;color:#222;}
 .table-admin-style thead tr th:last-child{border-right:0;}
-.table-admin-style tr th, .table-admin-style tr td{text-align:center;padding:0.5rem;vertical-align:middle;}
-.table-admin-style .title{display:block;max-width:800px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;margin: 0px auto;}
+.table-admin-style tr th, .table-admin-style tr td{text-align:center;padding:0.5rem 1rem;vertical-align:middle;}
+.table-admin-style .title span{display:block;max-width:780px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;text-align:left!important;}
 .table-admin-style .btn{width:100%;}
 .sorting-style table.dataTable>thead>tr>th:not(.sorting_disabled), 
 .sorting-style table.dataTable>thead>tr>td:not(.sorting_disabled) {

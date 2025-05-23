@@ -144,6 +144,9 @@ input:read-only::-webkit-scrollbar-track {
 .text-primary {
     color: #003b8e !important;
 }
+.bg-primary {
+    background-color: #003b8e !important;
+}
 a.btn, label.btn, span.btn{display:flex;align-items:center;justify-content:center;}
 .form-control[type=file]{line-height: 2;}
 .btn{min-height:45px;}

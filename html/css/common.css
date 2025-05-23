@@ -68,20 +68,17 @@ h1, h2, h3, h4, h5, h6{margin-bottom:0;}
 .dropdown-content a + a{margin-top:4px}
 .img_responsive{max-width:100%;height:auto;}
 .contents{padding:0 0.2rem;margin:4rem auto;}
-.table-st {display: table;table-layout: fixed;width: 100%;border-top: 2px solid #001f45;border-collapse: separate;border-collapse: collapse;}
+.table-st {display: table;table-layout:auto;width: 100%;border-top: 2px solid #001f45;border-collapse: separate;border-collapse: collapse;}
 .table-st td {border-left: 1px solid #ddd;border-bottom: 1px solid #ddd;vertical-align: middle;word-wrap: break-word;word-break: keep-all;color: #202020;background: #fff;}
 .table-st th {background-color: #f4f4f4;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;color: #333;font-weight: 500;vertical-align: middle;}
 .table-st th, .table-st td {padding:1rem;}
-.table-st th:first-child, .table_st td:first-child {border-left: none;}
+.table-st th:first-child, .table-st td:first-child {border-left: none;}
 .table-st.gray{border-top: 2px solid #999;}
-.table-st.gray th:first-child, .table_st.gray td:first-child{border-left:1px solid #ddd}
-.table-st02 {display: table;table-layout: fixed;width: 100%;border-top: 2px solid #001f45;border-collapse: separate;border-collapse: collapse;}
-.table-st02 td {border-left: 1px solid #ddd;border-bottom: 1px solid #ddd;vertical-align: middle;word-wrap: break-word;word-break: keep-all;color: #202020;background: #fff;}
-.table-st02 th:first-child, .table-st02 td:first-child{border-left:0;}
-.table-st02 th {background-color: #f4f4f4;border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;color: #333;font-weight: 500;vertical-align: middle;}
-.table-st02 th, .table-st02 td {padding:1rem;}
+
 .table-scroll{overflow:auto;}
 .table-scroll table{min-width:1200px}
+
+.table-ti{margin-bottom:1rem;font-weight:600;}
 
 b{font-weight:600;}
 /* 유효한 입력일 때 초록 테두리 제거 */
@@ -171,7 +168,6 @@ b{font-weight:600;}
 .main-link .link04{background:url('../img/link04.png') #00469C no-repeat;background-size:70%;background-position:50% 10%;}
 .main-link div[class*="col-"]:nth-child(2n) span{color:#fff}
 
-
 /*sub*/
 .sub-ti{margin:4rem 0 2rem 0;}
 .sub-ti h3{display:inline-block;font-size:2rem;font-weight:bold;position: relative;z-index:2;}
@@ -259,23 +255,10 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .partner:hover a::before, .partner:hover a::after{transition-delay: 0.2s;}
 
 /*정사각형*/
-.square .partner {
-  aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */
-  height: auto;
-}
-.square .partner {
-  width: 25%;
-  position: relative;
-  padding-top: 25%; /* ✅ 정사각형 만들기: 세로를 가로의 100%로 */
-}
-.square .partner a {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+.square .partner {aspect-ratio: 1 / 1; /* 정사각형 비율 유지 */height:auto;}
+.square .partner {width: 25%;position: relative;padding-top: 25%; /* 세로를 가로의 100%로 */}
+.square .partner a {position: absolute;top:0;left:0;width:100%;height:100%;display:flex;justify-content:center;align-items:center;}
+
 /*오시는 길*/
 .map-ti {background: #f9f9f9;padding: 10px 10px 10px 10px;border: 1px solid #dfdfdf;position: absolute;bottom:170px;z-index: 10;width:100%;}
 .map-ti svg{color:#00469C;margin-right:4px}
@@ -304,11 +287,6 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 /*이수조건*/
 .line-ti{text-align: center;}
 .line-ti span{display:inline-block;padding:0.5rem 2rem;font-size:1.25rem;font-weight:600;border:5px solid rgba(0, 70, 156, 0.2);}
-.condition .line-ti{margin-bottom:2rem}
-.condition table{text-align:center;width:100%;line-height:1.2;}
-.condition table tr td span{line-height:1.5}
-.reference-text{margin-top:10px;font-weight:500;color:#00469C}
-
 .curriculum{background:url('../img/curriculum.png') no-repeat 100% 100%;}
 .curriculum .tabnav{border:1px solid #ddd;}
 .curriculum .tabnav li{flex:1;border-radius:0;}
@@ -319,7 +297,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .curriculum .box p{margin:0.2rem 0;font-size:1.125rem}
 .curriculum .box p span{display:block;font-size:1rem;margin:4px 0;}
 .curriculum .box p span b{color:#002550}
-.etc{font-size:1.125rem;line-height:1.8}
+
 
 /*로그인*/
 .sub-ti.center-ti{text-align:center;}
@@ -369,6 +347,27 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .confirmation .cont .info .text .sign{background:url('../img/confirmation_sign.png') no-repeat;
     background-size: 100px 100px;background-position: 100% 0;height: 100px;display:block;}
 .confirmation .cont .info .text .sign .name{display:block;padding-top:1.8rem;font-size:1.7rem;font-weight:500}
+
+/*게시판*/
+.board-wrap{position: relative;}
+.board-admin-btn{position: absolute;right:10px;top:-60px;}
+.board-list table{min-width:1200px}
+.board-list .table {display: table;table-layout:auto;width: 100%;border-top: 2px solid #333;border-collapse: separate;border-collapse: collapse;}
+.board-list .table th {background-color: #f4f4f4;border-bottom: 1px solid #dddddd!important;font-weight: 500;}
+.board-list .table td {border-bottom: 1px solid #dddddd;}
+.board-list .table th:first-child, .board-list .table td:first-child{border-left:0;}
+.board-list .table th, .board-list .table td {min-height:60px;;padding:0.85rem 1.5rem;vertical-align: middle;word-wrap: break-word;word-break: keep-all;text-align:center;}
+.board-list .title{text-align:left!important;}
+.board-list .title a{max-width:700px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;font-weight:400;}
+.board-list .title a:hover{color:#00479d;text-decoration: underline;}
+.board-list .title .badge{margin-right:10px;vertical-align: text-top;min-width: 50px;}
+.board-list .title svg{margin-right:10px}
+.board-list.board-list-download .title a{max-width:600px}
+.board-list.board-list-download .download-btn a{font-size:0.875rem;padding:0;min-height:30px}
+.board-wrap .pagination{margin:2rem 0;justify-content:center;}
+.board-wrap .pagination .page-link{color:#222222;width:45px;height:45px;display:flex;align-items:center;justify-content:center;} 
+.board-wrap .pagination .page-item.active .page-link{background:#00479d;border-color:#00479d;color:#ffffff;}
+
 /*print*/
 @page {
     size: A4;
@@ -383,18 +382,14 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
         -webkit-print-color-adjust: exact; 
         print-color-adjust: exact; 
     }
-
     body * {
         visibility: hidden !important;
     }
-
     /* 인쇄 대상 지정 */
     #printModalContent,
     #printModalContent * {
         visibility: visible !important;
     }
-
-
     /* 모달 내부 버튼 및 기타 숨기기 */
     .modal-footer,
     .btn-close {
@@ -530,5 +525,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
     .curriculum .tabnav{flex-wrap: wrap;}
     .curriculum .tabnav li{flex:0 0 50%}
     .curriculum .tabnav li:nth-child(n+3){border-top:1px solid #ddd}
+    .board-admin-btn{top:-50px}
+    .board-admin-btn .btn{font-size:0.875rem;min-height:35px;}
 }
 
