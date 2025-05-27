@@ -359,7 +359,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .board-list .table th, .board-list .table td {min-height:60px;;padding:0.85rem 1.5rem;vertical-align: middle;word-wrap: break-word;word-break: keep-all;text-align:center;}
 .board-list .title{text-align:left!important;}
 .board-list .title a{max-width:700px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;vertical-align: middle;font-weight:400;}
-.board-list .title a:hover{color:#00479d;text-decoration: underline;}
+.board-list .title a:hover{color:#333;text-decoration: underline;}
 .board-list .title .badge{margin-right:10px;vertical-align: text-top;min-width: 50px;}
 .board-list .title svg{margin-right:10px}
 .board-list.board-list-download .title a{max-width:600px}
