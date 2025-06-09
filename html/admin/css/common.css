@@ -44,6 +44,7 @@ background-size: cover;}
     border-color: #003b8e;
 }
 
+.admin-login{max-width:600px}
 
 @media (min-width: 576px) {
     .topbar .dropdown .dropdown-menu {

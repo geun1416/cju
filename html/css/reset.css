@@ -149,7 +149,7 @@ input:read-only::-webkit-scrollbar-track {
 a.btn, label.btn, span.btn{display:flex;align-items:center;justify-content:center;}
 .form-control[type=file]{line-height: 2;}
 .btn{min-height:45px;}
-input{min-height:45px}
+input, select{min-height:45px}
 input[type=radio], input[type=checkbox]{min-height:auto;}
 .list-txt{margin-top:0.8rem}
 .list-txt > li {position: relative;padding-left:14px;font-size:1rem;word-break: keep-all;}
@@ -187,10 +187,11 @@ input[type="number"] {
   }
 
 .file-upload-wrap input[type="file"] {display: none;}
-.file-upload-wrap:hover .file-upload-button{background-color: #5c636a;border-color: #565e64;}
-.file-upload-button{font-weight:400;min-width:100px}
-.file-name{margin-left:0.7rem}
+.file-upload-button{font-weight:400;min-width:100px;border-right:1px solid #ddd;border-top-right-radius:0;border-bottom-right-radius:0;
+font-weight:500;background:#f4f4f4}
+.file-name{margin-left:0.8rem}
 .file-upload-wrap.disabled, .file-upload-wrap.readonly {background:#e9ecef;pointer-events: none;}
 .file-name-wrap{display:flex;align-items:center;}
 .clear-file {margin-left:5px;font-size:1.25rem;background: none;border: none;color: #888;cursor: pointer;}
-.clear-file:hover{color:#ed1125}
+select:has(option[value=""]:checked) {color: #777777;}
+select:invalid {color: #777777;}

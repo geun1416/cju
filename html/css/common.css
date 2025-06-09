@@ -103,7 +103,7 @@ b{font-weight:600;}
 .tabnav li a:hover{color:#00479d}
 .tabnav li a.active{background:#00479d;border-color:#00479d;color:#fff;font-weight:500}
 .tabnav li:first-child a{border-top-left-radius:8px;}
-.tabcontent{border:1px solid #fff;border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
+.tabcontent{border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
 
 /*modal*/
 .modal-backdrop.show{opacity: .3;}
@@ -237,6 +237,8 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .partner-box ul li a{display:flex;width:100%;height:100%;text-align: center;align-items: center;justify-content: center;}
 .partner-box + .partner-box{margin-top:80px;} */
 
+
+.partner-box-logo{margin-top:5rem}
 .partner-box ul{width:100%; margin:0 auto;}
 .partner-box ul li img{max-width:100%;}
 .partner-box ul::after{display:block; content:""; clear:both;}
@@ -298,7 +300,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .curriculum .box p{margin:0.2rem 0;font-size:1.125rem}
 .curriculum .box p span{display:block;font-size:1rem;margin:4px 0;}
 .curriculum .box p span b{color:#002550}
-
+.curriculum .btn-wrap{margin-top:2rem;justify-content: flex-start;}
 
 /*로그인*/
 .sub-ti.center-ti{text-align:center;}

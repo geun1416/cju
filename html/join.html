@@ -91,14 +91,14 @@
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">비밀번호 확인</label>
 								<div class="required-input">
-									<input type="password" class="form-control" id="" placeholder="프로그램명을 입력해주세요" value="" required>
+									<input type="password" class="form-control" id="" placeholder="비밀번호를 입력해주세요" value="" required>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4 form-group">
+							<!-- <div class="col-md-4 form-group">
 								<label for="" class="form-label">프로그램명</label>
 								<div class="required-input">
 									<input type="text" class="form-control" id="" placeholder="프로그램명을 입력해주세요" value="" required>
@@ -107,7 +107,7 @@
 									올바른 형식이 아닙니다.
 									</div>
 								</div>
-							</div>
+							</div> -->
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">소속(대학)</label>
 								<div class="required-input">
@@ -131,10 +131,16 @@
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">학년</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="학년을 입력해주세요" value="" required>
+									<select class="form-select" aria-label="Default select example">
+										<option value="" disabled selected hidden>학년을 선택해주세요</option>
+										<option value="1">1학년</option>
+										<option value="2">2학년</option>
+										<option value="3">3학년</option>
+										<option value="4">4학년</option>
+									</select>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
+										학년을 선택해주세요.
 									</div>
 								</div>
 							</div>
@@ -188,6 +194,24 @@
 									</div>
 								</div>
 							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">성적표</label>
+								<div class="required-input">
+									<!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
+									<label class="file-upload-wrap">
+										<input type="file" id="customFile">
+										<span class="file-upload-button btn">파일 선택</span>
+										<span class="file-name-wrap">
+											<span class="file-name">선택된 파일 없음</span>
+											<button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
+										</span>
+									</label>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									Valid last name is required.
+									</div>
+								</div>
+							</div>								
 							<div class="col-md-12 form-group">
 								<label for="" class="form-label">주소</label>
 								<div class="input-btn-right"><!--input오른쪽에 button 있을때 div하나더 감싸주기. 클래스는 input-btn-right-->

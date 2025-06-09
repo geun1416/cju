@@ -50,7 +50,7 @@
 		<!--max-width는 container 100%는 container-fluid-->
 		<div class="container">
 			<div class="sub-contents">
-				<div class="sub-ti" data-aos="fade-in" data-aos-duration="1000"><h3>교육현황</h3></div>
+				<div class="sub-ti" data-aos="fade-in" data-aos-duration="1000"><h3>나의 강의실</h3></div>
 			</div>
 			<div class="">
 				<div class="row gy-4 align-items-center" data-aos="fade-in" data-aos-duration="1500">
@@ -75,7 +75,7 @@
 										</td>
 										<td>
 											<!-- <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#confirmationModal">참여확인서</button> -->
-											<button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#confirmationModal">이수증</button>
+										 <button class="btn btn-secondary w-100" data-bs-toggle="modal" data-bs-target="#confirmationModal">이수증</button>
 										</td>
 									</tr>
 								</tbody>
@@ -94,7 +94,7 @@
 			<div class="modal-content p-4">
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
 				<div class="modal-body" id="printModalContent">
-					<!--참여확인서
+					<!-- 참여확인서 -->
 					<div class="confirmation">
 						<div class="cont">
 							<div class="ti">
@@ -123,6 +123,47 @@
 									위 학생은 교육부와 한국산업기술진흥원이 주관하는<br/>
 									「2025 청주대학교 항공·우주 부트캠프 사업단」교육 과정을<br/>
 									참여하고 있음을 증명합니다.
+									<span class="etc">※ 이 증서는 강의를 모두 이수하였음을 의미하지 않으며,<br/>단지 참여 사실만을 확인하는 용도로 사용됩니다</span>
+									<span id="todayDate" class="date"></span>
+									<span class="sign">
+										<span class="name">청주대학교 항공·우주 부트캠프 사업단</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="confirmation">
+						<div class="cont">
+							<div class="ti">
+								<h4>이수증<span>Certificate of Completion</span></h4>
+							</div>
+							<div class="info">
+								<table>
+									<tr>
+										<th>이수구분</th>
+										<td><span style="letter-spacing:6px;">초급교과명</span></td>
+									</tr>
+									<tr>
+										<th>교육과정</th>
+										<td><span>첨단항공모빌리티(UAM조종시스템)</span></td>
+									</tr>
+									<tr>
+										<th>소&nbsp;&nbsp;&nbsp;&nbsp;속</th>
+										<td><span style="letter-spacing:6px;">?</span></td>
+									</tr>
+									<tr>
+										<th>학&nbsp;&nbsp;&nbsp;&nbsp;번</th>
+										<td><span>12121212</span></td>
+									</tr>
+									<tr>
+										<th>성&nbsp;&nbsp;&nbsp;&nbsp;명</th>
+										<td><span style="letter-spacing:6px;">홍길동</span></td>
+									</tr>															
+								</table>
+								<div class="text">
+									위 학생은 교육부와 한국산업기술진흥원이 주관하는<br/>
+									 「2025년 청주대학교 항공·우주 부트캠프 사업단」교육 과정을<br/>
+									 성실히 이수하였으므로 이 증서를 수여합니다.
 									<span class="etc">※ 본 증서는 공적인 증서로의 효력이 발생하지 않음</span>
 									<span id="todayDate" class="date"></span>
 									<span class="sign">
@@ -131,7 +172,24 @@
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="btn-wrap">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+						<button type="button" class="btn btn-primary" onclick="window.print()">인쇄하기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<div class="modal fade modal-style-alert" id="confirmationModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content p-4">
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="닫기"></button>
+				<div class="modal-body" id="printModalContent">
+					<!-- 이수증증 -->
 					<div class="confirmation">
 						<div class="cont">
 							<div class="ti">

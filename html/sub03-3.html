@@ -92,12 +92,16 @@
 								</div>
 							</div>							
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">프로그램명</label>
+								<label for="" class="form-label">프로그램 명</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="프로그램명을 입력해주세요" value="첨단항공모빌리티" required disabled>
+									<select class="form-select" aria-label="Default select example">
+										<option value="" disabled selected hidden>프로그램을 선택해주세요</option>
+										<option value="첨단항공모빌리티">첨단항공모빌리티</option>
+										<option value="첨단항공감항인증">첨단항공감항인증</option>
+									</select>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
-									Valid last name is required.
+										학년을 선택해주세요.
 									</div>
 								</div>
 							</div>
@@ -230,7 +234,7 @@
 									<!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
 									<label class="file-upload-wrap">
 										<input type="file" id="customFile">
-										<span class="file-upload-button btn btn-secondary">파일 선택</span>
+										<span class="file-upload-button btn">파일 선택</span>
 										<span class="file-name-wrap">
 											<span class="file-name">선택된 파일 없음</span>
 											<button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
@@ -248,7 +252,7 @@
 									<!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
 									<label class="file-upload-wrap">
 										<input type="file" id="customFile">
-										<span class="file-upload-button btn btn-secondary">파일 선택</span>
+										<span class="file-upload-button btn">파일 선택</span>
 										<span class="file-name-wrap">
 											<span class="file-name">선택된 파일 없음</span>
 											<button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
