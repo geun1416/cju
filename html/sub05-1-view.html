@@ -49,24 +49,103 @@
 	<div class="sub wrap">
 		<!--max-width는 container 100%는 container-fluid-->
 		<div class="container">
-			<div class="sub-contents">
-				<div class="sub-ti" data-aos="fade-in" data-aos-duration="1000"><h3>공지사항</h3></div>
-			</div>
 			<div class="">
 				<div class="row gy-4 align-items-center" data-aos="fade-in" data-aos-duration="1500">
 					<div class="col-12 col-lg-12 board-wrap">
-						<!-- <div class="board-admin-btn">
-							<a href="" class="btn btn-primary">관리자 글쓰기</a>
-						</div> -->
 						<div class="board-view">
-							d
-						</div>
-						<nav">
-							<ul class="">
-								<li><a href="">1</a></li>
-								<li><a href="">2</a></li>
-							</ul>
-						</nav>						
+							<h3 class="ti">홈페이지 오픈 안내</h3>
+							<div class="info">
+								<div class="user">
+									<p><b>작성자</b><span>홍길동</span></p>
+									<p><b>작성일</b><span>2025-06-09</span></p>
+									<p><b>조회수</b><span>123</span></p>
+								</div>
+								<div class="file">
+									<a href="img/logo_asf.png" download class="">
+										<b><i class="fas fa-download"></i></b>test.png
+									</a>
+								</div>
+							</div>
+							<div class="board-view-content">
+								<p>
+								여기에 게시글의 본문 내용이 들어갑니다.<br>
+								여러 줄로 작성해도 되고,<br>
+								이미지나 첨부파일, 링크 등을 포함할 수 있습니다.
+								</p>
+							</div>
+
+							<!-- 이전글/다음글 -->
+							<div class="board-view-footer">
+								<div class="post-navigation">
+									<a class="prev">
+										<span class="icon"><i class="fas fa-angle-left"></i></span>
+										<span class="txt">이전글 제목이 여기에 표시됩니다.이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다이전글 제목이 여기에 표시됩니다</span>
+									</a>
+									<a class="next">
+										<span class="txt">다음글 제목이 여기에 표시됩니다.다음글 제목이 여기에 표시됩니다.다음글 제목이 여기에 표시됩니다.다음글 제목이 여기에 표시됩니다.다음글 제목이 여기에 표시됩니다.다음글 제목이 여기에 표시됩니다.</span>
+										<span class="icon"><i class="fas fa-angle-right"></i></span>
+									</a>
+								</div>
+							</div>
+
+							<!-- 목록 버튼 -->
+							<div class="btn-wrap">
+								<a href="sub05-1.html" class="btn btn-secondary">목록 보기</a>
+							</div>
+
+							<!-- 댓글 영역 -->
+							<div class="comment-wrap">
+								<h5>댓글 <span class="text-muted">(2)</span></h5>
+								<!-- 댓글 리스트 -->
+								<div class="comment-list">
+									<!-- 공개 댓글 -->
+									<div class="comment-box">
+										<div class="comment-user">
+											<span><b>사용자1</b></span>
+											<span>2025-06-09</span>
+										</div>
+										<div class="comment-content">
+										댓글 내용입니다. 감사합니다!
+										</div>
+										<div class="comment-btn">
+											<button class="btn btn-secondary">수정</button>
+											<button class="btn btn-danger">삭제</button>
+										</div>
+									</div>
+
+									<!-- 비밀 댓글 -->
+									<div class="comment-box bg-light">
+										<div class="comment-user">
+											<span><i class="fa fa-solid fa-lock"></i><b>홍길동</b></span>
+											<span>2025-06-09</span>
+										</div>
+										<div class="comment-content">
+											비밀 댓글입니다.
+										</div>
+										<div class="comment-btn">
+											<button class="btn btn-secondary">수정</button>
+											<button class="btn btn-danger">삭제</button>
+										</div>
+									</div>
+								</div>
+								<!-- 댓글 입력 -->
+								<div class="comment-write">
+									<form>
+										<label for="commentInput" class="form-label">댓글 쓰기</label>
+										<div class="comment-write-textarea">
+											<textarea class="form-control" id="commentInput" rows="3" placeholder="댓글을 입력하세요."></textarea>
+											<button type="submit" class="btn btn-secondary btn-sm">등록</button>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="checkbox" id="isPrivate">
+											<label class="form-check-label" for="isPrivate">
+												비밀 댓글로 등록
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>					
 					</div>
 				</div>
 			</div>

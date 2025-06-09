@@ -373,6 +373,42 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .board-wrap .pagination .page-link{color:#222222;width:45px;height:45px;display:flex;align-items:center;justify-content:center;} 
 .board-wrap .pagination .page-item.active .page-link{background:#00479d;border-color:#00479d;color:#ffffff;}
 
+.board-view{margin-top:4rem;}
+.board-view .ti{font-size:1.8rem}
+.board-view .info{margin-top:1rem}
+.board-view .info .user{display:flex;flex-wrap: wrap;border-bottom:1px solid #ddd;padding-bottom:1rem}
+.board-view .info .user b{margin-right:6px}
+.board-view .info .user p::after{content:'';display:inline-block;width:1px;height:12px;background:#acacac;margin:0 0.8rem}
+.board-view .info .user p:last-child::after{display:none;}
+.board-view .info .file{background:#f4f4f4;padding:1rem}
+.board-view .info .file b{color:#555;margin-right:10px}
+.board-view .info .file a:hover{color:#333;text-decoration:underline;}
+.board-view-content{margin:2rem 0;padding:0 1rem;}
+.board-view-footer{border-top:1px solid #ddd;padding:1rem 0 0.5rem 0;}
+.post-navigation{display:flex;justify-content:space-between;}
+.post-navigation a{display:flex;align-items:center;}
+.post-navigation a:hover .icon{background:#f4f4f4}
+.post-navigation a:hover .txt{font-weight:400;}
+.post-navigation .txt{display:block;max-width:320px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.post-navigation .icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border:1px solid #ddd;border-radius:100%;color:#777}
+.post-navigation .prev .icon{margin-right:10px;}
+.post-navigation .next .icon{margin-left:10px;}
+
+.comment-wrap{margin-top:2rem}
+.comment-wrap h5{border-bottom:1px solid #ddd;padding-bottom:1rem;margin-bottom:1.5rem}
+.comment-box{border:1px solid #ddd;border-radius:0.25rem;padding:1rem;}
+.comment-box + .comment-box{margin-top:1rem}
+.comment-box .comment-user{display:flex;justify-content: space-between;}
+.comment-box .comment-content{margin-top:0.5rem}
+.comment-btn{margin-top:0.5rem}
+.comment-btn .btn{font-size:0.75rem;padding:0.2rem 1rem;min-height:auto;}
+.comment-btn .btn + .btn{margin-left:4px}
+.comment-user svg{margin-right:8px;}
+.comment-write{margin-top:1.5rem}
+.comment-write-textarea{display:flex;gap:0.5rem;margin-bottom:0.5rem}
+.comment-write textarea{resize: none;height:100px;}
+.comment-write .btn{min-width:120px;height:100px}
+
 /*지원 프로그램*/
 .bg-light-blue{background:rgba(136, 190, 255, 0.1)}
 .program .bg-light-blue{border-top:2px solid #001f45;}
@@ -487,6 +523,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     #hd{width:100%}
     #hd:hover .gnb_1da{color:#222 !important}
     #hd:hover #logo a{color:#222 !important}
+    .post-navigation .txt{max-width:500px;}
 }
 
 @media screen and (max-width:1399px){
@@ -537,7 +574,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .main-link a{min-height:220px}
 }
 
-@media screen and (max-width:767px){
+@media screen and (max-width:768px){
     .m_gnb div.mg_wrap>ul{padding:80px 60px;}
     .m_gnb div.mg_wrap>ul>li{padding:5px 0;}
     .m_gnb div.mg_wrap>ul>li>a{font-size:1.25rem; font-weight:900; color:#444;}
@@ -566,6 +603,11 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .ic-progress li{margin:1rem}
     .ic-curriculum li::after{display:none}
     .ic-curriculum li{margin:1rem}
+    .board-view{margin-top:2rem}
+    .post-navigation{flex-direction:column;align-items: flex-start;}
+    .post-navigation .next{flex-direction: row-reverse;margin-top:0.5rem;}
+    .post-navigation .next .icon{margin-left:0;margin-right:10px;}
+    .post-navigation .icon{width:22px;height:22px;}
 }
 
 
@@ -613,5 +655,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .board-admin-btn{top:-50px}
     .board-admin-btn .btn{font-size:0.875rem;min-height:35px;}
     .program .card-body img{width:30px;}
+    .comment-write-textarea{flex-direction: column;}
+    .comment-write .btn{min-width:100%;height:auto}
 }
 
