@@ -373,7 +373,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .board-wrap .pagination .page-link{color:#222222;width:45px;height:45px;display:flex;align-items:center;justify-content:center;} 
 .board-wrap .pagination .page-item.active .page-link{background:#00479d;border-color:#00479d;color:#ffffff;}
 
-.board-view{margin-top:4rem;}
+.board-view, .board-write{margin-top:4rem;}
 .board-view .ti{font-size:1.8rem}
 .board-view .info{margin-top:1rem}
 .board-view .info .user{display:flex;flex-wrap: wrap;border-bottom:1px solid #ddd;padding-bottom:1rem}
@@ -383,8 +383,8 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .board-view .info .file{background:#f4f4f4;padding:1rem}
 .board-view .info .file b{color:#555;margin-right:10px}
 .board-view .info .file a:hover{color:#333;text-decoration:underline;}
-.board-view-content{margin:2rem 0;padding:0 1rem;}
-.board-view-footer{border-top:1px solid #ddd;padding:1rem 0 0.5rem 0;}
+.board-view-content{margin:2rem 0 0 0;padding:0 1rem 2rem 0;border-bottom:1px solid #ddd;}
+.board-view-footer{padding:1rem 0 0.5rem 0;}
 .post-navigation{display:flex;justify-content:space-between;}
 .post-navigation a{display:flex;align-items:center;}
 .post-navigation a:hover .icon{background:#f4f4f4}
@@ -603,7 +603,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .ic-progress li{margin:1rem}
     .ic-curriculum li::after{display:none}
     .ic-curriculum li{margin:1rem}
-    .board-view{margin-top:2rem}
+    .board-view, .board-write{margin-top:2rem}
     .post-navigation{flex-direction:column;align-items: flex-start;}
     .post-navigation .next{flex-direction: row-reverse;margin-top:0.5rem;}
     .post-navigation .next .icon{margin-left:0;margin-right:10px;}
