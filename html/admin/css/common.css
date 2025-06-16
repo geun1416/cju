@@ -37,14 +37,23 @@ background-size: cover;}
    bottom:0.7rem
 }
 
-.page-item.active .page-link {
-    z-index: 3;
-    color: #fff;
-    background-color: #003b8e;
-    border-color: #003b8e;
+.page-item.active .page-link {z-index: 3;color: #fff;background-color: #003b8e;border-color: #003b8e;}
+.admin-login{max-width:600px}
+
+.bs-floating-select {position: relative;}
+.bs-floating-select select.form-select {padding:.575rem 2.25rem .375rem .75rem /* label 공간 확보 */}
+.bs-floating-select label {position: absolute;top: 10px;left: 12px;font-size: 14px;background-color: white;padding: 0 4px;pointer-events: none;transition: all 0.2s ease;}
+.bs-floating-select select:focus + label,
+.bs-floating-select select:not([value=""]):valid + label {
+  top: -7px;
+  left: 10px;
+  font-size: 11px;
+  color: #2f353a;
+  font-weight:400;
 }
 
-.admin-login{max-width:600px}
+.btn-wrap{display:flex;}
+.btn-wrap .btn + .btn{margin-left:10px}
 
 @media (min-width: 576px) {
     .topbar .dropdown .dropdown-menu {
