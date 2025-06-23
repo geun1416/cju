@@ -105,6 +105,12 @@ b{font-weight:600;}
 .tabnav li:first-child a{border-top-left-radius:8px;}
 .tabcontent{border-bottom-left-radius:8px;border-bottom-right-radius:8px;}
 
+.tabnav.tabnav-width-auto{display:flex;border-bottom:1px solid #ddd;}
+.tabnav.tabnav-width-auto li a{display:inline-block;text-align:center;padding:12px 20px;border:1px solid #ddd;border-bottom:0;min-width:200px}
+.tabnav.tabnav-width-auto li a:hover{color:#00479d}
+.tabnav.tabnav-width-auto li a.active{background:#00479d;border-color:#00479d;color:#fff;font-weight:500}
+.tabnav.tabnav-width-auto li + li a{border-left:0;}
+
 /*modal*/
 .modal-backdrop.show{opacity: .3;}
 .modal-style-alert .modal-dialog{justify-content:center;}
@@ -207,6 +213,8 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .business .table-st .future ul li + li{margin-top:0.5rem}
 
 /*조직도*/
+.org .tabcontent{padding:3rem 0}
+.org .tabcontent h3{margin-bottom:1rem}
 .org-chart{text-align:center;}
 .org-chart p{margin:4rem 0 2rem 0;line-height:1.5}
 
@@ -236,7 +244,6 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .partner-box ul li img{max-width:100%;}
 .partner-box ul li a{display:flex;width:100%;height:100%;text-align: center;align-items: center;justify-content: center;}
 .partner-box + .partner-box{margin-top:80px;} */
-
 
 .partner-box-logo{margin-top:5rem}
 .partner-box ul{width:100%; margin:0 auto;}
@@ -458,14 +465,15 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 }
 
 /*지원 내용*/
-.support-info h4{margin-top:1rem}
-.support-info ul{display:flex;flex-wrap: wrap;}
-.support-info ul li{display:flex;flex-direction: column;align-items:center;text-align:center;margin:1rem}
-.support-info ul li .ti{min-width:300px;text-align:center;padding:0.8rem 1rem;display:block;border-radius:50px;font-weight:500;color:#fff;}
-.support-info ul li .txt b{display:block;margin-top:1rem}
-.support-info ul li:nth-child(1) .ti{background: linear-gradient(135deg, #2ecc71, #27ae60);}
-.support-info ul li:nth-child(2) .ti{background: linear-gradient(135deg, #f39c12, #e67e22);}
-.support-info ul li:nth-child(3) .ti{background: linear-gradient(135deg, #3498db, #2c3e50);}
+.support-info h4{margin-top:1rem;font-size:1.5rem;font-weight:700;text-align:left}
+.support-info ul{display:flex;flex-direction:column;}
+.support-info ul li{display:grid;grid-template-columns:220px 1fr;align-items:start;margin-top:1rem;border:1px solid #ddd;border-radius:4px;background:#fff}
+.support-info ul li .ti{font-weight:500;font-size:1.125rem;color:#fff;display:flex;align-items:center;justify-content:center;height:100%;border-top-left-radius:4px;border-bottom-left-radius:4px;}
+.support-info ul li .txt{font-size:1rem;line-height:1.6;color:#333;padding:0.5rem 1rem}
+.support-info ul li .txt b{display:block;margin-bottom:0.25rem;color:#000}
+.support-info ul li:nth-child(1) .ti{background:linear-gradient(135deg,#2ecc71,#27ae60)}
+.support-info ul li:nth-child(2) .ti{background:linear-gradient(135deg,#f39c12,#e67e22)}
+
 
 /*교육과정개요*/
 .ic-curriculum{display:flex;flex-wrap: wrap;align-items:center;justify-content:center;margin:2rem 0;}
@@ -485,6 +493,56 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 .course-info{text-align:center;}
 .course-ti {font-size:1.125rem;background:#e4ecf8;padding:1rem;text-align:center;font-weight:bold;border-radius:10px;margin-bottom:2rem;}
 
+.step-box{font-size:1rem;background-color: #f8f9fa;transition: all 0.2s ease;padding:1.5rem;text-align:center;border-radius:4px;box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;border:1px solid #dee2e6}
+.step-box:hover {background-color: #e9f2ff;box-shadow: 0 4px 12px rgba(13, 110, 253, 0.1);}
+.step-box .step-number{font-size:1.5rem}
+
+.download-callout{display:flex;align-items:flex-start;justify-content:space-between;padding:1.5rem;margin-bottom:2rem;gap:1rem;border-radius:0.75rem;background-color:#fff;box-shadow:0 0.25rem 1rem rgba(0,0,0,0.05);border:1px solid #dee2e6;border-left:5px solid #00469C;}
+.callout-left{display:flex;align-items:center;gap:1rem;text-align:left;}
+.callout-left .icon{font-size:2rem;color:#00469C;}
+.text-group .title{font-weight:700;font-size:1.125rem;color:#212529;}
+.text-group .subtitle{font-size:1rem;color:#6c757d;}
+.download-btn{display:inline-flex;justify-content:center;align-items:center;gap:0.5rem;padding:0.6rem 1.2rem;border:1px solid #00469C;color:#00469C;border-radius:999px;
+  background-color:transparent;text-decoration:none;transition:all 0.2s ease-in-out;min-width:250px;}
+.download-btn:hover{background-color:#00469C;color:#fff;}
+.download-btn span{font-weight:500;}
+.download-btn:hover span{color:#fff;}
+
+.curriculum-cont{max-width:900px;margin:4rem auto 0 auto;}
+.curriculum-cont .top{display:flex;margin:0 auto;justify-content:center;position:relative;z-index:999;align-items:center}
+.curriculum-cont .top .ci{min-width:240px;min-height:240px;border-radius:50%;border:1px dashed rgba(0,64,128,.2);background:radial-gradient(circle at center, rgba(240,248,255,0.5) 0%, rgba(255,255,255,0.9) 70%),#fdfdfd;display:flex;align-items:center;justify-content:center}
+.curriculum-cont .top .ci .ci-inner{width:220px;height:220px;border-radius:50%;border:2px solid rgba(0,64,128,.08);background:#ffffff;box-shadow:0 2px 6px rgba(0,0,0,0.05);display:flex;align-items:center;justify-content:center;flex-direction:column}
+.curriculum-cont .top .ci .ci-inner img{max-width:140px;width:100%;;height:auto}
+.curriculum-cont .top::after {content:'';position:absolute;width:1px;height:60px;background:#00469C;bottom:-30px;left:50%;transform:translateX(-50%);z-index:-1;}
+.curriculum-cont .bottom{display:grid;gap:60px;grid-template-columns:repeat(2,1fr);padding-top:30px;box-sizing:border-box;position:relative}
+.curriculum-cont .bottom dl{padding-top:30px;box-sizing:border-box;position:relative;z-index:99}
+.curriculum-cont .bottom dl:before{display:block;content:'';width:1px;height:80%;left:50%;transform:translateX(-50%);background:#00469C;position:absolute;top:0}
+.curriculum-cont .bottom dl:first-of-type:before{height:90%}
+.curriculum-cont .bottom dl:nth-of-type(2):before{height:35%;top:0px}
+.curriculum-cont .bottom:before{height:1px;width:calc((100% + 60px)/2);display:block;content:'';background:#00469C;position:absolute;top:30px;left:50%;transform:translateX(-50%)}
+.curriculum-cont .bottom dl dt{height:70px;line-height:68px;padding:0 20px;color:#fff;text-align:center;border-radius:10px;background:#00469C;border:1px solid #00469C;margin-bottom:11px;position:relative;z-index:999;font-weight:600;font-size:1.125rem}
+.curriculum-cont .bottom dl dd{display:flex;align-items:center;text-align:left;padding:0 0 0 30px;border:1px solid #ccc;background:#fff;border-radius:10px;height:80px;margin-bottom:4px;position:relative;z-index:999;font-weight:600;color:#333;cursor:pointer;transition:all .3s ease}
+.curriculum-cont .bottom dl dd:before{width:36px;height:36px;border-radius:100%;background:rgba(34,39,47,.3);color:#fff;font-family:"Font Awesome 5 Free";font-size:1rem;content:'\f002';display:flex;position:absolute;right:30px;top:50%;transform:translateY(-50%);align-items:center;justify-content:center;font-weight:900;transition:all .3s ease}
+.curriculum-cont .bottom dl dd:last-of-type{margin-bottom:0}
+.curriculum-cont .bottom dl dd:hover{background:#fff;color:#00469C;border-color:#00469C}
+.curriculum-cont .bottom dl dd:hover:before{background:#00469C;color:#fff;}
+
+.curriculum-cont.microdegree{max-width:600px}
+.curriculum-cont.microdegree .top::after{content:'';position:absolute;width:1px;height:60px;background:#00469C;bottom:-30px;left:50%;transform:translateX(-50%);z-index:-1}
+.curriculum-cont.microdegree .bottom{display:grid;grid-template-columns:repeat(1,1fr);}
+.curriculum-cont.microdegree .bottom dl{padding-top:30px;position:relative;z-index:99}
+.curriculum-cont.microdegree .bottom:before{display:none}
+
+.curriculum-cont.track{max-width:600px}
+.curriculum-cont.track .top::after{content:'';position:absolute;width:1px;height:60px;background:#00469C;bottom:-30px;left:50%;transform:translateX(-50%);z-index:-1}
+.curriculum-cont.track .bottom{display:grid;grid-template-columns:repeat(1,1fr);}
+.curriculum-cont.track .bottom dl{padding-top:30px;position:relative;z-index:99}
+.curriculum-cont.track .bottom:before{display:none}
+
+.curriculum-modal .table-box{padding:0.5rem;}
+.curriculum-modal .table-st tr th, .curriculum-modal .table-st tr td{border:1px solid #ddd;text-align:center;padding:0.75rem 0.5rem}
+.curriculum-modal h6{margin-bottom:1rem;font-size:1.125rem}
+.curriculum-modal .btn-wrap{margin-top:0;}
 
 
 /*print*/
@@ -610,7 +668,11 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .post-navigation .next{flex-direction: row-reverse;margin-top:0.5rem;}
     .post-navigation .next .icon{margin-left:0;margin-right:10px;}
     .post-navigation .icon{width:22px;height:22px;}
-}
+    .download-callout{flex-direction:column;align-items:center;}
+    .company-download-step{gap:1rem}
+    .full-curriculum .tabnav li{flex:1;}
+    .full-curriculum .tabnav li a{min-width:auto;width:100%;padding:1rem 0.5rem}
+  }
 
 
 @media screen and (max-width:480px){
@@ -659,6 +721,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .program .card-body img{width:30px;}
     .comment-write-textarea{flex-direction: column;}
     .comment-write .btn{min-width:100%;height:auto}
-    .support-info ul {justify-content: center;}
+    .curriculum-cont .bottom{gap:30px;}
+    .curriculum-cont .bottom:before{width:calc((100% + 30px)/2);}
 }
 
