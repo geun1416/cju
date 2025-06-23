@@ -213,7 +213,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .business .table-st .future ul li + li{margin-top:0.5rem}
 
 /*조직도*/
-.org .tabcontent{padding:3rem 0}
+.org .tabcontent{padding:2rem 0}
 .org .tabcontent h3{margin-bottom:1rem}
 .org-chart{text-align:center;}
 .org-chart p{margin:4rem 0 2rem 0;line-height:1.5}
