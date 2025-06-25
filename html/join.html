@@ -57,7 +57,7 @@
 					<div class="col-12">
 						<!-- <h4>항공우주 부트캠프사업 교육 프로그램 신청서</h4> -->
 						<form class="needs-validation join-form mt-2" novalidate>
-						<!-- 프로그램명 -->
+
 						<div class="row mb-3">
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">아이디</label>
@@ -98,16 +98,6 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="col-md-4 form-group">
-								<label for="" class="form-label">프로그램명</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="프로그램명을 입력해주세요" value="" required>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div> -->
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">소속(대학)</label>
 								<div class="required-input">
@@ -165,16 +155,6 @@
 								</div>
 							</div>
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">생년월일</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="생년월일을 입력해주세요 (YYYY-MM-DD)" value="" required>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
 								<label for="" class="form-label">휴대폰 번호</label>
 								<div class="required-input">
 									<input type="text" class="form-control" id="" placeholder="휴대폰 번호를 입력해주세요" value="" required>
@@ -193,9 +173,75 @@
 									올바른 형식이 아닙니다.
 									</div>
 								</div>
+							</div>					
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">주소</label>
+								<div class="input-btn-right"><!--input오른쪽에 button 있을때 div하나더 감싸주기. 클래스는 input-btn-right-->
+									<div class="required-input">
+										<input type="text" class="form-control" id="" placeholder="주소를 입력해주세요" value="" required>
+										<span class="required-mark">*</span>
+										<div class="invalid-feedback">
+										올바른 형식이 아닙니다.
+										</div>
+									</div>
+									<button class="btn btn-secondary" type="button">주소검색</button>
+								</div>
+							</div>	
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">상세주소</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="상세주소를 입력해주세요" value="" required>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>																						
+						</div>
+						<div class="row mb-3 scholarship-join">
+							<h5>장학금 지급을 위한 필수 정보</h5>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">주민등록번호</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="예금주명을 입력해주세요" value="" required>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
 							</div>
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">성적표</label>
+								<label for="" class="form-label">은행명</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="은행명을 입력해주세요" value="" required>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>	
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">예금주</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="은행명을 입력해주세요" value="" required>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>	
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">계좌번호</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="본인 명의 계좌번호를 입력해주세요" value="" required>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">신분증 사본</label>
 								<div class="required-input">
 									<!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
 									<label class="file-upload-wrap">
@@ -211,55 +257,30 @@
 									Valid last name is required.
 									</div>
 								</div>
-							</div>								
-							<div class="col-md-12 form-group">
-								<label for="" class="form-label">주소</label>
-								<div class="input-btn-right"><!--input오른쪽에 button 있을때 div하나더 감싸주기. 클래스는 input-btn-right-->
-									<div class="required-input">
-										<input type="text" class="form-control" id="" placeholder="주소를 입력해주세요" value="" required>
-										<span class="required-mark">*</span>
-										<div class="invalid-feedback">
-										올바른 형식이 아닙니다.
-										</div>
-									</div>
-									<button class="btn btn-secondary" type="button">주소검색</button>
-								</div>
 							</div>
-							<div class="col-md-6 form-group">
-								<label for="" class="form-label">계좌번호</label>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">통장 사본</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="본인 명의 계좌번호를 입력해주세요" value="" required>
+									<!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
+									<label class="file-upload-wrap">
+										<input type="file" id="customFile">
+										<span class="file-upload-button btn">파일 선택</span>
+										<span class="file-name-wrap">
+											<span class="file-name">선택된 파일 없음</span>
+											<button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
+										</span>
+									</label>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
+									Valid last name is required.
 									</div>
 								</div>
-								<span class="form-text-guide">
-									※ 교육과정운영위원회의 검수/평가를 통해 장학금 차등 지급 예정 <b>본인명의 계좌만 가능</b>
-								</span>
+							</div>	
+							<div class="scholarship-join-text">
+								<span>* 교육과정운영위원회의 검수/평가를 통해 장학금 차등 지급 예정 <b>본인명의 계좌만 가능</b></span>
+								<span>* 본 정보는 <b>장학금 지급만을 위하여 사용</b>됩니다.</span>
 							</div>
-							<div class="col-md-3 form-group">
-								<label for="" class="form-label">은행명</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="은행명을 입력해주세요" value="" required>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-3 form-group">
-								<label for="" class="form-label">예금주</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="예금주명을 입력해주세요" value="" required>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>																							
 						</div>
-						
 						<!--개인정보 수집-->
 						<div class="terms-box">
 							<h5>개인정보 수집·이용 및 제3자 제공 동의서</h5>

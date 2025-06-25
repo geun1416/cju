@@ -190,9 +190,10 @@ input[type="number"] {
 .file-upload-wrap input[type="file"] {display: none;}
 .file-upload-button{font-weight:400;min-width:100px;border-right:1px solid #ddd;border-top-right-radius:0;border-bottom-right-radius:0;
 font-weight:500;background:#f4f4f4}
-.file-name{margin-left:0.8rem}
 .file-upload-wrap.disabled, .file-upload-wrap.readonly {background:#e9ecef;pointer-events: none;}
-.file-name-wrap{display:flex;align-items:center;}
-.clear-file {margin-left:5px;font-size:1.25rem;background: none;border: none;color: #888;cursor: pointer;}
+.file-name-wrap{display:flex;align-items:center;min-width:0;flex:1}
+.file-name{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin-left:0.8rem}
+.clear-file{margin-right:1rem;font-size:1.25rem;background:none;border:none;color:#888;cursor:pointer;flex-shrink:0}
 select:has(option[value=""]:checked) {color: #777777;}
 select:invalid {color: #777777;}
+.form-select:disabled{background-image:none}

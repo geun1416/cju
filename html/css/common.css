@@ -345,6 +345,11 @@ box-shadow: 0 4px 10px rgba(104, 104, 104, 0.2)}
 .join-sign .today{margin:0px auto;max-width:455px;margin-bottom:2rem}
 .join-sign .today h5{text-align:center;}
 .join-sign .today #todayDate{display:block;margin-bottom:4px}
+.scholarship-join h5{font-size:1.4rem;margin-bottom:0.5rem;border-bottom:1px;position:relative;z-index:1;}
+.scholarship-join h5::after{content:'';display:block;width:280px;height:10px;background:rgba(0, 119, 255, 0.2);position:absolute;bottom:-3px;z-index:-1;}
+.scholarship-join{border-top:3px dotted #ddd;padding-top:3rem;margin-top:3rem;}
+.scholarship-join-text{margin-top:1rem}
+.scholarship-join-text span{display:block;margin-top:0.2rem}
 
 /*마이페이지*/
 @import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
