@@ -297,17 +297,20 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 /*이수조건*/
 .line-ti{text-align: center;}
 .line-ti span{display:inline-block;padding:0.5rem 2rem;font-size:1.25rem;font-weight:600;border:5px solid rgba(0, 70, 156, 0.2);}
-.curriculum{background:url('../img/curriculum.png') no-repeat 100% 100%;}
+/* .curriculum{background:url('../img/curriculum.png') no-repeat 100% 100%;} */
 .curriculum .tabnav{border:1px solid #ddd;}
 .curriculum .tabnav li{flex:1;border-radius:0;}
 .tabnav li:first-child a{border-radius:0;}
 .curriculum .tabnav li a{width:100%;}
 .curriculum .box + .box{margin-top:2rem}
-.curriculum .box h6{font-size:1.5rem;font-weight:600;margin:4rem 0 2rem;}
+.curriculum .box h6{font-size:1.8rem;font-weight:600;margin-bottom:1rem}
 .curriculum .box p{margin:0.2rem 0;font-size:1.125rem}
 .curriculum .box p span{display:block;font-size:1rem;margin:4px 0;}
 .curriculum .box p span b{color:#002550}
 .curriculum .btn-wrap{margin-top:2rem;justify-content: flex-start;}
+.curriculum .tabcontent{background:#f4f4f4;border:1px solid #ddd;padding:4rem;border-radius:8px!important;margin-top:2rem;
+box-shadow: 0 4px 10px rgba(104, 104, 104, 0.2)}
+
 
 /*로그인*/
 .sub-ti.center-ti{text-align:center;}
@@ -465,7 +468,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 }
 
 /*지원 내용*/
-.support-info h4{margin-top:1rem;font-size:1.5rem;font-weight:700;text-align:left}
+.support-info h4{margin-top:1rem;font-size:1.7rem;font-weight:700;text-align:left}
 .support-info ul{display:flex;flex-direction:column;}
 .support-info ul li{display:grid;grid-template-columns:220px 1fr;align-items:start;margin-top:1rem;border:1px solid #ddd;border-radius:4px;background:#fff}
 .support-info ul li .ti{font-weight:500;font-size:1.125rem;color:#fff;display:flex;align-items:center;justify-content:center;height:100%;border-top-left-radius:4px;border-bottom-left-radius:4px;}
@@ -473,7 +476,7 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 .support-info ul li .txt b{display:block;margin-bottom:0.25rem;color:#000}
 .support-info ul li:nth-child(1) .ti{background:linear-gradient(135deg,#2ecc71,#27ae60)}
 .support-info ul li:nth-child(2) .ti{background:linear-gradient(135deg,#f39c12,#e67e22)}
-
+.full-curriculum .support-info {margin-top:2rem}
 
 /*교육과정개요*/
 .ic-curriculum{display:flex;flex-wrap: wrap;align-items:center;justify-content:center;margin:2rem 0;}
@@ -502,12 +505,12 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 .callout-left .icon{font-size:2rem;color:#00469C;}
 .text-group .title{font-weight:700;font-size:1.125rem;color:#212529;}
 .text-group .subtitle{font-size:1rem;color:#6c757d;}
-.download-btn{display:inline-flex;justify-content:center;align-items:center;gap:0.5rem;padding:0.6rem 1.2rem;border:1px solid #00469C;color:#00469C;border-radius:999px;
+.download-callout .download-btn{display:inline-flex;justify-content:center;align-items:center;gap:0.5rem;padding:0.6rem 1.2rem;border:1px solid #00469C;color:#00469C;border-radius:999px;
   background-color:transparent;text-decoration:none;transition:all 0.2s ease-in-out;min-width:250px;}
-.download-btn:hover{background-color:#00469C;color:#fff;}
-.download-btn span{font-weight:500;}
-.download-btn:hover span{color:#fff;}
-
+.download-callout .download-btn:hover{background-color:#00469C;color:#fff;}
+.download-callout .download-btn span{font-weight:500;}
+.download-callout .download-btn:hover span{color:#fff;}
+ 
 .curriculum-cont{max-width:900px;margin:4rem auto 0 auto;}
 .curriculum-cont .top{display:flex;margin:0 auto;justify-content:center;position:relative;z-index:999;align-items:center}
 .curriculum-cont .top .ci{min-width:240px;min-height:240px;border-radius:50%;border:1px dashed rgba(0,64,128,.2);background:radial-gradient(circle at center, rgba(240,248,255,0.5) 0%, rgba(255,255,255,0.9) 70%),#fdfdfd;display:flex;align-items:center;justify-content:center}
