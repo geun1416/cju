@@ -28,20 +28,20 @@
 <body id="page-top">
 
     <!-- Page Wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" class="asf-admin">
 
         <!-- Sidebar -->
         <ul class="navbar-nav bg-gradient-dark sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand" href="index.html">
-                <div class="sidebar-brand-icon">
-                   <img src="img/logo_admin.png">
-                </div>
-                <div class="sidebar-brand-text">ASF ADMIN</div>
-            </a>
-
-
+            <li class="nav-item">
+                <a class="sidebar-brand" href="index.html">
+                    <div class="sidebar-brand-icon">
+                        <img src="img/logo_admin.png">
+                    </div>
+                    <div class="sidebar-brand-text">ASF ADMIN</div>
+                </a>
+            </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
@@ -55,6 +55,7 @@
                     </div>
                 </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#job"
                     aria-expanded="true" aria-controls="job">
@@ -65,7 +66,8 @@
                         <a class="collapse-item" href="sub_user.html">취·창업 관리</a>
                     </div>
                 </div>
-            </li>               
+            </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#community"
                     aria-expanded="true" aria-controls="community">
@@ -79,10 +81,11 @@
                     </div>
                 </div>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#education"
                     aria-expanded="true" aria-controls="education">
-                    <span>게시판 관리</span>
+                    <span>교육 관리</span>
                 </a>
                 <div id="education" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
@@ -91,16 +94,22 @@
                     </div>
                 </div>
             </li>
+
             <!-- Divider -->
-            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item">
+                <hr class="sidebar-divider d-none d-md-block">
+            </li>
 
             <!-- Sidebar Toggler (Sidebar) -->
-            <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
-            </div>
+            <li class="nav-item text-center d-none d-md-inline">
+                <div>
+                    <button class="rounded-circle border-0" id="sidebarToggle"></button>
+                </div>
+            </li>
 
         </ul>
         <!-- End of Sidebar -->
+
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
