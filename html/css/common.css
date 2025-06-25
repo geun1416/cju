@@ -160,6 +160,12 @@ b{font-weight:600;}
 .notic-list li a .ti{max-width:280px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .notic-list li a .ti:hover{text-decoration: underline;}
 .notic-list li a .ti .badge{font-size:0.75rem;margin-right:6px}
+.notic-list.job-list li{width:100%;display:flex;justify-content:space-between;}
+.notic-list.job-list li p{line-height: 1;}
+.notic-list.job-list li p span{margin:3px}
+.notic-list.job-list li p .job{font-weight:500;}
+.notic-list.job-list li span{font-size:0.875rem;}
+
 .gallery .post_box{border:0;}
 .gallery .post_box .post{padding:0}
 .gallery .row + .row{margin-top:0.5rem}
