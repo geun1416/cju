@@ -115,6 +115,7 @@ background-size: cover;}
 .required-input{position: relative;}
 .required-mark{color:#cd1125;position: absolute;right:6px;top:2px;z-index:11;font-size:1rem}
 
+
 @media (min-width: 576px) {
     .topbar .dropdown .dropdown-menu {
         width: auto;
