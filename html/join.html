@@ -30,7 +30,8 @@
  <script src="js/aos.js"></script>
  <script src="js/all.min.js"></script>
  <script src="js/common.js"></script>
-
+ <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+ 
  <title>ASF l 충북 항공·우주 인재 양성 허브</title>
 
  <script type="text/javascript">
@@ -57,7 +58,6 @@
 					<div class="col-12">
 						<!-- <h4>항공우주 부트캠프사업 교육 프로그램 신청서</h4> -->
 						<form class="needs-validation join-form mt-2" novalidate>
-
 						<div class="row mb-3">
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">아이디</label>
@@ -101,7 +101,9 @@
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">소속(대학)</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="소속 대학을 입력해주세요" value="" required>
+									<input type="text" class="form-control" id="univInput" placeholder="소속대학을 입력해주세요" value=""
+									data-bs-toggle="modal" data-bs-target="#univInputModal" style="cursor:pointer;"
+									>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -394,5 +396,25 @@
 		</div>
 	</div>
 	<footer id="footer"></footer>
+
+<div class="modal fade" id="univInputModal" aria-hidden="true" aria-labelledby="cInputModalLabel" tabindex="-1">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h5 class="modal-title" id="univInputModalLabel">소속(대학)</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="autocomplete-wrapper">
+					<input type="text" class="form-control" id="search" >
+					<ul id="result"></ul>  <!-- 결과가 input 바로 아래 붙음 -->
+				</div>
+			</div>
+			<div class="modal-footer justify-content-end">
+			<button type="button" class="btn btn-primary" id="univBtn" data-bs-dismiss="modal" style="min-width:120px">확인</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
 </html>

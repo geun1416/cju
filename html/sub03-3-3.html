@@ -56,53 +56,20 @@
 			<div class="join">
 				<div class="row align-items-center" data-aos="fade-in" data-aos-duration="1500">
 					<div class="col-12">
-						<h4 class="mt-4 mb-2">항공우주 부트캠프사업 교육 프로그램 신청서</h4> 
+						<div class="complet-title">
+							<b>중급2 몰입형</b>
+						</div>
+
 						<form class="needs-validation join-form" novalidate>
 						<div class="row mb-3">
 							<div class="col-md-6 form-group">
-								<div class="row">
-									<label for="" class="form-label">유형</label>
-									<!--radio type-->
-									<div class="col-6">
-										<input type="radio" class="btn-check" name="type" id="type1" autocomplete="off">
-										<label class="btn btn-outline-primary w-100" for="type1">교과형</label>
-									</div>
-									<div class="col-6">
-										<input type="radio" class="btn-check" name="type" id="type2" autocomplete="off">
-										<label class="btn btn-outline-primary w-100" for="type2">몰입형</label>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 form-group">
-								<div class="row">
-									<label for="" class="form-label">수준</label>
-									<!--교과 형일때 초급 제외 disabled 처리-->
-									<div class="col-3">
-										<input type="radio" class="btn-check" name="type2" id="type3" autocomplete="off">
-										<label class="btn btn-outline-success w-100" for="type3">초급</label>
-									</div>
-									<div class="col-3">
-										<input type="radio" class="btn-check" name="type2" id="type4" autocomplete="off">
-										<label class="btn btn-outline-success w-100" for="type4">중급1</label>
-									</div>
-									<div class="col-3">
-										<input type="radio" class="btn-check" name="type2" id="type4" autocomplete="off">
-										<label class="btn btn-outline-success w-100" for="type4">중급2</label>
-									</div>
-									<div class="col-3">
-										<input type="radio" class="btn-check" name="type2" id="type5" autocomplete="off">
-										<label class="btn btn-outline-success w-100" for="type5">고급</label>
-									</div>
-								</div>
-							</div>	
-							<div class="col-md-6 form-group">
-								<!--몰입 > 초급 일때 프로그램 disabled 바로 과목명 1개만 있음-->
 								<label for="" class="form-label">프로그램</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" id="programSelect">
+									<select class="form-select" id="programSelect" aria-label="Default select example">
 										<option value="" disabled selected hidden>프로그램을 선택해주세요</option>
 										<option value="단항공감항인증/항공우주MRO">첨단항공감항인증/항공우주MRO</option>
 										<option value="첨단항공모빌리티">첨단항공모빌리티</option>
+										
 									</select>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
@@ -113,7 +80,7 @@
 							<div class="col-md-6 form-group">
 								<label for="" class="form-label">과목</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" id="subjectSelect">
+									<select class="form-select"id="subjectSelect"  aria-label="Default select example">
 										<option value="" disabled selected hidden>과목을 선택해주세요</option>
 										<option value="해당 항목들 맞게 표출">해당 항목들 맞게 표출</option>
 									</select>

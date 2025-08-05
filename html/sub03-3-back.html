@@ -30,7 +30,6 @@
  <script src="js/aos.js"></script>
  <script src="js/all.min.js"></script>
  <script src="js/common.js"></script>
- <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
 
  <title>ASF l 충북 항공·우주 인재 양성 허브</title>
 
@@ -99,89 +98,34 @@
 								<!--몰입 > 초급 일때 프로그램 disabled 바로 과목명 1개만 있음-->
 								<label for="" class="form-label">프로그램</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" id="programSelect">
+									<select class="form-select" aria-label="Default select example">
 										<option value="" disabled selected hidden>프로그램을 선택해주세요</option>
 										<option value="단항공감항인증/항공우주MRO">첨단항공감항인증/항공우주MRO</option>
 										<option value="첨단항공모빌리티">첨단항공모빌리티</option>
 									</select>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
-										올바른 형식이 아닙니다.
+										프로그램을 선택해주세요.
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 form-group">
 								<label for="" class="form-label">과목</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" id="subjectSelect">
+									<select class="form-select" aria-label="Default select example">
 										<option value="" disabled selected hidden>과목을 선택해주세요</option>
 										<option value="해당 항목들 맞게 표출">해당 항목들 맞게 표출</option>
 									</select>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
-										올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
-								<label for="" class="form-label">학번</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="학번을 입력해주세요" value="">
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
-								<label for="" class="form-label">이름</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="" value="홍길동" disabled>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
-								<label for="" class="form-label">휴대폰 번호</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="" value="01077775555" disabled  maxlength="11"  maxlength="11" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
-								<label for="" class="form-label">이메일</label>
-								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="" value="example@gmail.com" disabled>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-									올바른 형식이 아닙니다.
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 form-group">
-								<label for="" class="form-label">성별</label>
-								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" disabled>
-										<option value="1">남</option>
-										<option value="2">여</option>
-									</select>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
-										올바른 형식이 아닙니다.
+										과목을 선택해주세요.
 									</div>
 								</div>
 							</div>
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">소속(대학)</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="univInput" placeholder="" value="청주대학교"
-									data-bs-toggle="modal" data-bs-target="#univInputModal" disabled
-									>
+									<input type="text" class="form-control" id="" placeholder="소속 대학을 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -191,14 +135,7 @@
 							<div class="col-md-4 form-group">
 								<label for="" class="form-label">학과(전공)</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example" disabled>
-										<option>항공운항학과</option>
-										<option>항공기계공학과</option>
-										<option>무인항공기학과</option>
-										<option>항공서비스학과</option>
-										<option>전기제어학과</option>
-										<option>데이터사이언스학과</option>
-									</select>
+									<input type="text" class="form-control" id="" placeholder="학과 또는 전공명을 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -206,16 +143,65 @@
 								</div>
 							</div>
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">전공분야</label>
+								<label for="" class="form-label">학년</label>
 								<div class="required-input">
-									<select class="form-select" aria-label="Default select example">
-										<option value="" disabled selected hidden>전공분야를 선택해주세요</option>
-										<option>공학</option>
-										<option>예체능</option>
-										<option>자연과학</option>
-										<option>의학</option>
-										<option>인문사회</option>
+									<select class="form-select" aria-label="Default select example" disabled>
+										<option value="" disabled selected hidden>학년을 선택해주세요</option>
+										<option value="1">1학년</option>
+										<option value="2">2학년</option>
+										<option value="3">3학년</option>
+										<option value="4">4학년</option>
 									</select>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+										학년을 선택해주세요.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">학번</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="학번을 입력해주세요" value="" disabled>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">이름</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="이름을 입력해주세요" value="" disabled>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">주민등록번호</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="예금주명을 입력해주세요" value="" disabled>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">휴대폰 번호</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="휴대폰 번호를 입력해주세요" value="" disabled>
+									<span class="required-mark">*</span>
+									<div class="invalid-feedback">
+									올바른 형식이 아닙니다.
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 form-group">
+								<label for="" class="form-label">이메일</label>
+								<div class="required-input">
+									<input type="text" class="form-control" id="" placeholder="이메일 주소를 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -223,27 +209,19 @@
 								</div>
 							</div>					
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">학년구분</label>
-								<div class="required-input">
-									<select class="form-select" aria-label="Default select example">
-										<option value="" disabled selected hidden>학년 및 학기를 선택해 주세요</option>
-										<option>2학년 1학기</option>
-										<option>2학년 2학기</option>
-										<option>3학년 1학기</option>
-										<option>3학년 2학기</option>
-										<option>4학년 1학기</option>
-										<option>4학년 2학기</option>
-									</select>
-									<span class="required-mark">*</span>
-									<div class="invalid-feedback">
+								<label for="" class="form-label">주소</label>
+									<div class="required-input">
+										<input type="text" class="form-control" id="" placeholder="주소를 입력해주세요" value="" disabled>
+										<span class="required-mark">*</span>
+										<div class="invalid-feedback">
 										올바른 형식이 아닙니다.
+										</div>
 									</div>
-								</div>
 							</div>	
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">생년월일</label>
+								<label for="" class="form-label">계좌번호</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="주민번호 앞자리 형태로 입력해주세요" value="" maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+									<input type="text" class="form-control" id="" placeholder="본인 명의 계좌번호를 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -251,9 +229,9 @@
 								</div>
 							</div>
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">입학연월</label>
+								<label for="" class="form-label">은행명</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="YYYY-MM 형태로 입력해주세요" value="" maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+									<input type="text" class="form-control" id="" placeholder="은행명을 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -261,9 +239,9 @@
 								</div>
 							</div>	
 							<div class="col-md-4 form-group">
-								<label for="" class="form-label">졸업(예정)연월</label>
+								<label for="" class="form-label">예금주</label>
 								<div class="required-input">
-									<input type="text" class="form-control" id="" placeholder="YYYY-MM 형태로 입력해주세요" value="" maxlength="6" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+									<input type="text" class="form-control" id="" placeholder="은행명을 입력해주세요" value="" disabled>
 									<span class="required-mark">*</span>
 									<div class="invalid-feedback">
 									올바른 형식이 아닙니다.
@@ -271,6 +249,8 @@
 								</div>
 							</div>
 						</div>
+
+
 						<div class="btn-wrap" style="margin-top:2rem;">
 							<button class="btn btn-secondary" onclick="location.href='index.html'">취소</button>
 							<button class="btn btn-primary" type="submit">신청하기</button>
@@ -281,8 +261,7 @@
 			</div>
 		</div>
 	</div>
+
 	<footer id="footer"></footer>
-
-
 </body>
 </html>

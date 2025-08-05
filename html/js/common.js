@@ -111,3 +111,115 @@ $(function () {
       $(this).hide();
     });
   });
+
+
+
+$(function () {
+  $.getJSON('js/universities.json', function (data) {
+    const names = data.records.map(u => u.학교명);
+
+    const fuse = new Fuse(names, {
+      includeScore: true,
+      threshold: 0.3
+    });
+
+    const $result = $('#result');
+    const $search = $('#search');
+
+    // 전체 이름을 먼저 렌더링
+    function renderAll() {
+      $result.empty();
+      names.forEach(name => {
+        $('<li>').text(name).appendTo($result);
+      });
+    }
+
+    // 필터링 함수
+    function renderFiltered(keyword) {
+      const matches = fuse.search(keyword).map(m => m.item);
+      $result.empty();
+      matches.forEach(name => {
+        $('<li>').text(name).appendTo($result);
+      });
+    }
+
+    // 초기 전체 목록 출력
+    renderAll();
+
+    // 입력 시 필터링 or 전체 다시 표시
+    $search.on('input', function () {
+      const keyword = $(this).val().trim();
+      if (keyword === "") {
+        renderAll();
+      } else {
+        renderFiltered(keyword);
+      }
+    });
+
+    // 클릭 시 input에 삽입
+    $result.on('click', 'li', function () {
+      $search.val($(this).text());
+    });
+  });
+});
+
+$(function () {
+  $('#univBtn').on('click', function () {
+    const val = $('#search').val().trim();
+    if (val) {
+      $('#univInput').val(val);
+    }
+  });
+});
+
+$(function () {
+  const $trigger = $('#beginnerImmersionInput');
+  const $program = $('#programSelect');
+  const $subject = $('#subjectSelect');
+
+  const originalProgramOptions = $program.html();
+  const originalSubjectOptions = $subject.html();
+
+  $trigger.on('click', function () {
+    const isActive = $(this).toggleClass('active').hasClass('active');
+
+    if (isActive) {
+      $program.prop('disabled', true).html('<option>-</option>');
+      $subject.prop('disabled', true).html('<option>하늘도시</option>');
+      $(this).val('초급 몰입형');
+    } else {
+      $program.prop('disabled', false).html(originalProgramOptions);
+      $subject.prop('disabled', false).html(originalSubjectOptions);
+      $(this).val('').attr('placeholder', '초급 몰입형 신청시 클릭해주세요');
+    }
+  });
+});
+
+$(function () {
+  const $type = $('input[name="type"]'); // 유형
+  const $level = $('input[name="type2"]'); // 수준
+  const $program = $('#programSelect');
+  const $subject = $('#subjectSelect');
+
+  const originalProgramOptions = $program.html();
+  const originalSubjectOptions = $subject.html();
+
+  function updateProgramAndSubject() {
+    const typeId = $('input[name="type"]:checked').attr('id');
+    const levelId = $('input[name="type2"]:checked').attr('id');
+
+    const isImmersionAndBeginner = (typeId === 'type2' && levelId === 'type3');
+
+    if (isImmersionAndBeginner) {
+      // 몰입형 + 초급일 때
+      $program.prop('disabled', true).html('<option>-</option>');
+      $subject.prop('disabled', true).html('<option value="하늘도시">하늘도시</option>');
+    } else {
+      // 그 외에는 원상복구
+      $program.prop('disabled', false).html(originalProgramOptions);
+      $subject.prop('disabled', false).html(originalSubjectOptions);
+    }
+  }
+
+  $type.add($level).on('change', updateProgramAndSubject);
+});

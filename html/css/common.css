@@ -8,7 +8,7 @@
 
 /*header*/
 .mo_hd{display:none}
-#hd {z-index:100;position:fixed; top:0; overflow:hidden; transition:0.6s ease; -webkit-transition:0.6s ease;}
+#hd {z-index:100;position:fixed; top:0; overflow:hidden;}
 #hd:hover{background:#fff;}
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 .logo_wrap{display:flex;align-items:center;}
@@ -288,6 +288,7 @@ font-size:0.875rem;font-weight:600;margin-right:8px;max-width:72px;text-align: c
 .map .root_daum_roughmap .cont .section *{font-size:1rem}
 .map .root_daum_roughmap .cont .section .title{font-weight:500;margin-bottom:10px}
 .map .wrap_controllers{display:none}
+.map .root_daum_roughmap .cont{display:none}
 
 .traffic{padding-top:40px;}
 .traffic ul li{padding:40px 0;border-top:1px dotted #ddd;}
@@ -564,6 +565,17 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 .curriculum-modal .text-box{padding:0.25rem 1rem 1rem 1rem;border-radius:4px;margin:0.5rem;background:#f4f4f4;border-radius:4px;}
 .curriculum-modal .text-box .list-txt{margin-top:0.5rem}
 
+.complet-title{font-size:2rem;margin-bottom:2rem;border-bottom:1px;position:relative;z-index:1;display:inline-block;left:50%;transform:translateX(-50%);}
+.complet-title::after{content:'';display:inline-block;width:120%;height:16px;background:rgba(0, 119, 255, 0.2);position:absolute;left:50%;transform:translateX(-50%);bottom:-3px;z-index:-1;}
+
+.universities-modal .modal-content{height:515px;min-width:800px}
+#result {width:100%;margin-top:1rem;border-radius:.25rem;border:1px solid #ced4da;height:260px;overflow-y: auto;}
+#result li {padding:6px 10px;cursor: pointer;}
+#result li:hover {background: #f0f0f0;}
+#univInput{cursor: pointer;}
+#univInput:disabled, #univInput:read-only{cursor:default;}
+#beginnerImmersionInput{cursor:pointer;background:#fff;}
+#beginnerImmersionInput.active{background:#00469C;color:#FFF}
 
 /*print*/
 @page {
@@ -744,4 +756,5 @@ border:1px solid rgba(136, 190, 255, 0.2);}
     .curriculum-cont .bottom{gap:30px;}
     .curriculum-cont .bottom:before{width:calc((100% + 30px)/2);}
 }
+
 
