@@ -95,9 +95,10 @@ b{font-weight:600;}
 .input-btn-right>div{width:100%}
 .input-btn-right .btn{margin-left:0.5rem;min-width:100px;height:45px}
 .input-btn-right .file-upload-button.btn{margin-left:0;}
-.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {color: #dc3545;}
-.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {background-color: #dc3545;}
-.form-check-input.is-valid, .was-validated .form-check-input:valid {border-color: #dc3545;}
+/* .was-validated .form-check-input:valid~.form-check-label {color: #dc3545;}
+.was-validated .form-check-input:valid:checked {background-color: #dc3545;}
+.was-validated .form-check-input:valid {border-color: #dc3545;} */
+
 /*tab*/
 .tabnav{display:flex;border-bottom:1px solid #ddd;}
 .tabnav li a{display:inline-block;text-align:center;padding:12px 20px;border-right:1px solid #ddd;}
