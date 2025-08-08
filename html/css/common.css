@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6{margin-bottom:0;font-weight:600;}
 b{font-weight:600;}
 /* 유효한 입력일 때 초록 테두리 제거 */
 .was-validated .form-control:valid, .form-control.is-valid:focus, .was-validated .form-control:valid:focus {border-color:#ced4da;padding-right: inherit;background-image: none;box-shadow: none;}
+.was-validated .form-select:valid, .form-select.is-valid:focus, .was-validated .form-select:valid:focus {border-color:#ced4da;padding-right: inherit;background-image: none;box-shadow: none;}
 .form-group{margin-top:1rem;}
 .required-input{position: relative;}
 .required-mark{color:#cd1125;position: absolute;right:6px;top:2px;z-index:11;font-size:1rem}
