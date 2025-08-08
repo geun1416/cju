@@ -573,8 +573,8 @@ border:1px solid rgba(136, 190, 255, 0.2);}
 #result {width:100%;margin-top:1rem;border-radius:.25rem;border:1px solid #ced4da;height:260px;overflow-y: auto;}
 #result li {padding:6px 10px;cursor: pointer;}
 #result li:hover {background: #f0f0f0;}
-#univInput{cursor: pointer;}
-#univInput:disabled, #univInput:read-only{cursor:default;}
+#affiliation{cursor: pointer;}
+#affiliation:disabled, #affiliation:read-only{cursor:default;}
 #beginnerImmersionInput{cursor:pointer;background:#fff;}
 #beginnerImmersionInput.active{background:#00469C;color:#FFF}
 

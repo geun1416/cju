@@ -167,7 +167,7 @@ $(function () {
   $('#univBtn').on('click', function () {
     const val = $('#search').val().trim();
     if (val) {
-      $('#univInput').val(val);
+      $('#affiliation').val(val);
     }
   });
 });
