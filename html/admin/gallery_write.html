@@ -14,7 +14,7 @@
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -22,6 +22,7 @@
     <link href="css/common.css" rel="stylesheet">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -167,14 +168,14 @@
                 <div class="container-fluid board-wrap">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">회원정보 관리</h1>
+                    <h1 class="h3 mb-4 text-gray-800">갤러리 관리</h1>
                     <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below.
                         For more information about DataTables, please visit the <a target="_blank"
                             href="https://datatables.net">official DataTables documentation</a>.</p> -->
 
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">회원정보 등록</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">갤러리 신규등록</h6>
                         </div>
                         <div class="card-body">
                            <div class="">
@@ -182,93 +183,41 @@
                                     <div class="col-12 col-lg-12 board-wrap">
                                         <div class="board-write">
                                             <div class="row">
-                                                <div class="col-12 form-group">
+                                                <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">제목</label>
-                                                    <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="제목을 입력해 주세요." value="" required>
-                                                        <span class="required-mark">*</span>
-                                                        <div class="invalid-feedback">
-                                                        올바른 형식이 아닙니다.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 form-group">
-                                                    <label for="" class="form-label">이름</label>
-                                                    <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="이름을 입력해 주세요." value="" required>
-                                                        <span class="required-mark">*</span>
-                                                        <div class="invalid-feedback">
-                                                        올바른 형식이 아닙니다.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 form-group">
-                                                    <label for="" class="form-label">이메일</label>
-                                                    <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="이메일을 입력해 주세요." value="" required>
-                                                        <span class="required-mark">*</span>
-                                                        <div class="invalid-feedback">
-                                                        올바른 형식이 아닙니다.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 form-group">
-                                                    <label for="" class="form-label">내용</label>
-                                                    <div class="required-input">
-                                                        <textarea class="form-control" id="editor" rows="3" placeholder="내용을 입력하세요."></textarea>
-                                                        <span class="required-mark">*</span>
-                                                        <div class="invalid-feedback">
-                                                        올바른 형식이 아닙니다.
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                           </div>
-                        </div>
-                    </div>
-                    <div class="card shadow mb-4">
-                        <div class="card-header board-tab-menu">
-                            <ul class="tab-menu">
-                                <li class="active"><a href="#tab1" class="">회원상세 정보</a></li>
-                                <li><a href="#tab2" class="">사본 정보</a></li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                           <div class="">
-                            <div class="tab-wrap">
-                                <div class="tab-content">
-                                    <div id="tab1" class="tab-pane active">
-                                        <div class="row gy-4 align-items-center">
-                                            <div class="col-12 col-lg-12 board-wrap">
-                                                <div class="board-write">
-                                                    <div class="row">
-                                                    <div class="col-md-4 form-group">
-                                                        <label for="" class="form-label">신분증 사본</label>
-                                                        <div class="input-btn-right">
-                                                            <div class="required-input">
-                                                                <!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
-                                                                <label class="file-upload-wrap">
-                                                                    <input type="file" id="customFile">
-                                                                    <span class="file-upload-button btn">파일 선택</span>
-                                                                    <span class="file-name-wrap">
-                                                                        <span class="file-name">선택된 파일 없음</span>
-                                                                        <button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
-                                                                    </span>
-                                                                </label>
-                                                                <span class="required-mark">*</span>
-                                                                <div class="invalid-feedback">
-                                                                Valid last name is required.
-                                                                </div>
+                                                    <div class="input-btn-right">
+                                                        <div class="required-input">
+                                                            <input type="text" class="form-control" id="" placeholder="아이디를 입력해 주세요." value="" required>
+                                                            <span class="required-mark">*</span>
+                                                            <div class="invalid-feedback">
+                                                            올바른 형식이 아닙니다.
                                                             </div>
-                                                            <button class="btn btn-secondary" type="button">다운로드</button>
                                                         </div>
-                                                    </div>	
-
-                                                    <div class="col-md-4 form-group">
-                                                        <label for="" class="form-label">신분증 사본</label>
+                                                    </div>
+                                                </div>	
+                                                <div class="col-md-3 form-group">
+                                                    <label for="" class="form-label">표출 여부</label>
+                                                    <div class="required-input">
+                                                        <select class="form-select" id="filterPosition" required>
+                                                            <option value="표출">표출</option>
+                                                            <option value="미 표출">미 표출</option>
+                                                        </select>
+                                                        <span class="required-mark">*</span>
+                                                        <div class="invalid-feedback">
+                                                        올바른 형식이 아닙니다.
+                                                        </div>
+                                                    </div>
+                                                </div>	
+                                                <div class="col-md-3 form-group">
+                                                    <label for="" class="form-label">
+                                                        썸네일 이미지
+                                                    <button type="button" class="tooltip-icon">!</button>
+                                                    <div class="custom-tooltip" style="left:118px">
+                                                        권장사이즈 : 700*500<br/>
+                                                        이미지 파일(jpg, png, gif, jpeg)만 등록 가능합니다.
+                                                    </div>
+                                                    </label>
+                                                    <div class="input-btn-right">
                                                         <div class="required-input">
                                                             <!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
                                                             <label class="file-upload-wrap">
@@ -284,15 +233,51 @@
                                                             Valid last name is required.
                                                             </div>
                                                         </div>
+                                                        <button class="btn btn-secondary">미리보기</button>
                                                     </div>
+                                                </div>	
+                                                <div class="col-md-3 form-group">
+                                                    <label for="" class="form-label">
+                                                        첨부 파일
+                                                    <button type="button" class="tooltip-icon">!</button>
+                                                    <div class="custom-tooltip">
+                                                        이미지 파일(jpg, png, gif, jpeg)만 등록 가능합니다.
+                                                    </div>
+                                                    </label>
+                                                    <div class="input-btn-right">
+                                                        <div class="required-input">
+                                                            <!--첨부파일 input 커스텀 때문에 disabled 또는 readonly시 class 붙혀주기-->
+                                                            <label class="file-upload-wrap">
+                                                                <input type="file" id="customFile">
+                                                                <span class="file-upload-button btn">파일 선택</span>
+                                                                <span class="file-name-wrap">
+                                                                    <span class="file-name">선택된 파일 없음</span>
+                                                                    <button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
+                                                                </span>
+                                                            </label>
+                                                            <!-- <span class="required-mark">*</span> -->
+                                                            <div class="invalid-feedback">
+                                                            Valid last name is required.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>	
+                                                <div class="col-md-12 form-group">
+                                                    <label for="" class="form-label">
+                                                        내용
+                                                    </label>
+                                                    <div class="required-input">
+                                                        <textarea class="form-control" id="editor" rows="3" placeholder="에디터 넣어주세요"></textarea>
+                                                        <span class="required-mark">*</span>
+                                                        <div class="invalid-feedback">
+                                                        올바른 형식이 아닙니다.
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="tab2" class="tab-pane">탭 2 내용입니다.</div>
                                 </div>
-                            </div>
                            </div>
                         </div>
                     </div>
@@ -300,7 +285,7 @@
                     <!-- 목록 버튼 -->
                     <div class="btn-wrap">
                         <button class="btn btn-secondary">목록</button>
-                        <button class="btn btn-primary">저장</button>
+                        <button class="btn btn-primary">등록</button>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
@@ -375,17 +360,18 @@
 
     <script>
         $(document).ready(function () {
-        $('.tab-menu li a').click(function (e) {
-            e.preventDefault();
+            $('.tab-menu li a').click(function (e) {
+                e.preventDefault();
 
-            $('.tab-menu li').removeClass('active');
-            $(this).parent().addClass('active');
+                $('.tab-menu li').removeClass('active');
+                $(this).parent().addClass('active');
 
-            var target = $(this).attr('href');
-            $('.tab-pane').removeClass('active');
-            $(target).addClass('active');
+                var target = $(this).attr('href');
+                $('.tab-pane').removeClass('active');
+                $(target).addClass('active');
+            });
         });
-        });
+
     </script>
 </body>
 

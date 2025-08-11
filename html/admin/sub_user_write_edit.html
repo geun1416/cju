@@ -174,10 +174,11 @@
 
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">회원정보 신규등록</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">회원정보 상세정보</h6>
+                            
                         </div>
                         <div class="card-body">
-                           <div class="">
+                           <div class="edit">
                                 <div class="row gy-4 align-items-center">
                                     <div class="col-12 col-lg-12 board-wrap">
                                         <div class="board-write">
@@ -186,30 +187,32 @@
                                                     <label for="" class="form-label">아이디</label>
                                                     <div class="input-btn-right">
                                                         <div class="required-input">
-                                                            <input type="text" class="form-control" id="" placeholder="아이디를 입력해 주세요." value="" required>
+                                                            <input type="text" class="form-control" id="" placeholder="아이디를 입력해 주세요." value="testID" required disabled>
                                                             <span class="required-mark">*</span>
                                                             <div class="invalid-feedback">
                                                             올바른 형식이 아닙니다.
                                                             </div>
                                                         </div>
-                                                        <button class="btn btn-secondary" type="button">중복확인</button>
                                                     </div>
                                                 </div>	
 
-                                                <div class="col-md-3  form-group">
+                                                <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">비밀번호</label>
-                                                    <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="비밀번호를 입력해 주세요." value="" required>
-                                                        <span class="required-mark">*</span>
-                                                        <div class="invalid-feedback">
-                                                        올바른 형식이 아닙니다.
+                                                    <div class="input-btn-right">
+                                                        <div class="required-input">
+                                                            <input type="password" class="form-control" id="" placeholder="비밀번호를 입력해 주세요." value="111111" required disabled>
+                                                            <span class="required-mark">*</span>
+                                                            <div class="invalid-feedback">
+                                                            올바른 형식이 아닙니다.
+                                                            </div>
                                                         </div>
+                                                        <button class="btn btn-secondary" type="button" data-toggle="modal" data-target="#passwordModal">변경하기</button>
                                                     </div>
-                                                </div>
+                                                </div>	
                                                 <div class="col-md-3  form-group">
                                                     <label for="" class="form-label">비밀번호 확인</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="비밀번호를 재 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="비밀번호를 재 입력해 주세요." value="111111" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -219,7 +222,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">소속(대학)</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="소속(대학)을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="소속(대학)을 입력해 주세요." value="청주대학교" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -229,7 +232,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">학과(전공)</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="학과(전공)을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="학과(전공)을 입력해 주세요." value="IT" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -239,7 +242,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">학년</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="학년을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="학년을 입력해 주세요." value="4학년" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -249,7 +252,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">학번</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="학번을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="학번을 입력해 주세요." value="2022545454" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -259,7 +262,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">이름</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="이름을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="이름을 입력해 주세요." value="홍길동" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -269,7 +272,17 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">생년월일</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="생년월일을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="생년월일을 입력해 주세요." value="950915" required disabled>
+                                                        <span class="required-mark">*</span>
+                                                        <div class="invalid-feedback">
+                                                        올바른 형식이 아닙니다.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 form-group">
+                                                    <label for="" class="form-label">가입일</label>
+                                                    <div class="required-input">
+                                                        <input type="text" class="form-control" id="" placeholder="생년월일을 입력해 주세요." value="2025-05-05 11:00:06" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -279,7 +292,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">휴대폰 번호</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="휴대폰 번호를 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="휴대폰 번호를 입력해 주세요." value="010-1111-1111" required>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -289,7 +302,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">이메일</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="이메일을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="이메일을 입력해 주세요." value="example@naver.com" required>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -299,7 +312,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">주소</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="주소를 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="주소를 입력해 주세요." value="인천광역시 서구 로봇랜드로 155-11" required>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -309,7 +322,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">계좌번호</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="계좌번호를 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="계좌번호를 입력해 주세요." value="110-454-485748" required>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -319,7 +332,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">은행 명</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="은행 명을 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="은행 명을 입력해 주세요." value="신한은행" required>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -329,7 +342,7 @@
                                                 <div class="col-md-3 form-group">
                                                     <label for="" class="form-label">예금주</label>
                                                     <div class="required-input">
-                                                        <input type="text" class="form-control" id="" placeholder="예금주를 입력해 주세요." value="" required>
+                                                        <input type="text" class="form-control" id="" placeholder="예금주를 입력해 주세요." value="홍길동" required disabled>
                                                         <span class="required-mark">*</span>
                                                         <div class="invalid-feedback">
                                                         올바른 형식이 아닙니다.
@@ -345,7 +358,7 @@
                                                                 <input type="file" id="customFile">
                                                                 <span class="file-upload-button btn">파일 선택</span>
                                                                 <span class="file-name-wrap">
-                                                                    <span class="file-name">선택된 파일 없음</span>
+                                                                    <span class="file-name">test.jpg</span>
                                                                     <button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
                                                                 </span>
                                                             </label>
@@ -354,6 +367,7 @@
                                                             Valid last name is required.
                                                             </div>
                                                         </div>
+                                                        <button class="btn-secondary btn">다운로드</button>
                                                     </div>
                                                 </div>	
                                                 <div class="col-md-3 form-group">
@@ -365,7 +379,7 @@
                                                                 <input type="file" id="customFile">
                                                                 <span class="file-upload-button btn">파일 선택</span>
                                                                 <span class="file-name-wrap">
-                                                                    <span class="file-name">선택된 파일 없음</span>
+                                                                    <span class="file-name">test2.jpg</span>
                                                                     <button type="button" class="clear-file" style="display:none;"><i class="fas fa-times"></i></button>
                                                                 </span>
                                                             </label>
@@ -374,6 +388,7 @@
                                                             Valid last name is required.
                                                             </div>
                                                         </div>
+                                                        <button class="btn-secondary btn">다운로드</button>
                                                     </div>
                                                 </div>	
                                             </div>
@@ -387,7 +402,8 @@
                     <!-- 목록 버튼 -->
                     <div class="btn-wrap">
                         <button class="btn btn-secondary">목록</button>
-                        <button class="btn btn-primary">등록</button>
+                        <button class="btn btn-primary">저장</button>
+                        <button class="btn btn-danger">삭제</button>
                     </div>
                 </div>
                 <!-- /.container-fluid -->
@@ -431,6 +447,55 @@
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
                     <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="passwordModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">비밀번호 변경</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-body-guide-text">
+                        <span class="guide-text">새로운 비밀번호를 설정해주세요.</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="" class="form-label">새 비밀번호</label>
+                            <div class="input-btn-right">
+                                <div class="required-input">
+                                    <input type="password" class="form-control" id="" placeholder="새 비밀번호를 입력해 주세요." value="" required>
+                                    <span class="required-mark">*</span>
+                                    <div class="invalid-feedback">
+                                    올바른 형식이 아닙니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                        <div class="col-md-12 form-group">
+                            <label for="" class="form-label">새 비밀번호 확인</label>
+                            <div class="input-btn-right">
+                                <div class="required-input">
+                                    <input type="password" class="form-control" id="" placeholder="새 비밀번호를 입력해 주세요." value="" required>
+                                    <span class="required-mark">*</span>
+                                    <div class="invalid-feedback">
+                                    올바른 형식이 아닙니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">취소</button>
+                    <button class="btn btn-primary" type="button" data-dismiss="modal">비밀번호 변경하기</button>
                 </div>
             </div>
         </div>
